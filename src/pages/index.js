@@ -1,131 +1,82 @@
-import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import Header from '../components/Header';
+import { useEffect, useState } from 'react';
+
 
 export default function Home() {
+
+  const [dimensions, setDimensions] = useState({ width: 1920, height: 1280 });
+
+  useEffect(() => {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    setDimensions({ width, height });
+  }, []);
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    
+    <main className={styles.homepage_container}>
+      {console.log(dimensions.width)}
+      {console.log(dimensions.height)}
+      <Header/>
+      <section className={styles.home_intro_section}>
+        <div className={styles.image_wrapper}>
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Image
+            src={'/images/jaguaracambé.jpeg'}
+            alt="Description of Image"
+            priority={true}
+            width={1920}
+            height={1280}
+            layout="responsive"
+          /> 
         </div>
-      </main>
+        <div className={styles.home_content}>
+          <h1>JAGUARACAMBÉ</h1>
+          <p>Associação para Conservação da Biodiversidade</p>
+        </div>
+        
+      </section>
+
+      <section className={styles.about_section}>
+            <h1>QUEM SOMOS</h1>
+            <p>
+              A jaguaracambé é uma associação não governamental que visa desenvolver e apoiar ações para a conservação da biodiversidade. Nossa equipe é formada por pesquisadores, educadores, especialistas em tecnologia e um time de voluntários que, juntos, trabalham pela preservação das espécies com o objetivo de contribuir para a manutenção da Saúde Única.
+            </p>
+            
+            <div className={styles.info_card}>
+                <h2>VALORES</h2>
+                <p>Respeito à vida; ética; disciplina; transparência; comprometimento; inclusão; empatia; integridade; fundamento científico; didática; consciência ambiental.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="93" height="92" viewBox="0 0 93 92" fill="none">
+<path d="M54.175 91.9998C54.1751 91.9997 54.175 91.9996 54.1749 91.9996H24.3208C23.166 91.9996 22.2299 91.0635 22.2299 89.9088C22.2299 88.754 23.166 87.8179 24.3208 87.8179H54.1583C59.1405 87.8083 63.6498 85.8083 66.9218 82.5775L86.7869 62.8819C87.9812 61.7224 88.7216 60.1075 88.7216 58.3211C88.7216 54.7967 85.84 51.9397 82.2851 51.9397C80.4918 51.9397 78.8698 52.6669 77.7027 53.8401L56.3022 75.0579C55.6772 75.6776 54.8327 76.0252 53.9526 76.0252H52.7082C51.5524 76.0252 50.6154 75.0882 50.6154 73.9324C50.6154 72.7781 51.5779 71.8774 52.662 71.481C54.9325 70.6508 56.5514 68.4864 56.5514 65.9472C56.5514 65.612 56.5234 65.2832 56.469 64.9634L56.4738 64.9979C55.8373 62.1488 53.3108 60.0494 50.2898 60.0494C50.2397 60.0494 50.1897 60.0499 50.1398 60.0512L50.1473 60.0509H38.4816C35.4286 60.0509 32.4161 59.352 29.675 58.0076L29.4758 57.9099C27.2029 56.7716 24.5213 56.105 21.6827 56.105C17.489 56.105 13.6378 57.5601 10.6148 59.9887L10.6478 59.9631C6.71474 63.0897 4.21799 67.8534 4.21799 73.195C4.21799 73.2845 4.21872 73.3738 4.22008 73.4629L4.2199 73.4494C4.2199 73.7173 4.00276 73.9344 3.73492 73.9344H0.449502C0.202399 73.9344 0.00208417 73.7341 0.00208417 73.487C0.000724928 73.3989 0 73.2952 0 73.1911C0 66.5348 3.11284 60.5994 7.97384 56.7377L8.0158 56.7053C11.7231 53.7276 16.4973 51.9248 21.6963 51.9248C25.2167 51.9248 28.5423 52.7513 31.4864 54.2195L31.3611 54.1629C33.6505 55.2854 36.1664 55.8691 38.7162 55.8691H50.1005C50.1606 55.8678 50.2314 55.8673 50.3026 55.8673C55.362 55.8673 59.5893 59.4003 60.6113 64.1138L60.6166 64.1429C60.6214 64.1693 60.6238 64.196 60.6238 64.2228V64.2403C60.6238 64.2547 60.6251 64.2692 60.6276 64.2834C60.663 64.487 60.9159 64.5747 61.0626 64.4292L74.7282 50.8802C76.6641 48.9182 79.3618 47.7018 82.3459 47.7018C88.23 47.7018 93 52.4311 93 58.265C93 61.2363 91.7627 63.921 89.7712 65.8403L89.7686 65.8427L69.9072 85.5349C65.8742 89.5167 60.3167 91.9836 54.178 92H54.1751C54.175 92 54.1749 91.9999 54.175 91.9998ZM50.4467 73.9344C50.4467 75.0891 49.5106 76.0252 48.3558 76.0252H32.3766C31.2218 76.0252 30.2857 75.0891 30.2857 73.9343C30.2857 72.7795 31.2218 71.8434 32.3766 71.8434H48.3558C49.5106 71.8434 50.4468 72.7796 50.4467 73.9344ZM46.3976 0C60.9097 0 72.6742 11.6642 72.6742 26.0526C72.6742 40.441 60.9097 52.1053 46.3976 52.1053C31.8854 52.1053 20.1209 40.441 20.1209 26.0526C20.1377 11.6709 31.8921 0.0167108 46.3959 8.9794e-05L46.3976 0ZM46.3976 47.9233C58.5803 47.9233 68.4565 38.1315 68.4565 26.0526C68.4565 13.9737 58.5802 4.18203 46.3976 4.18203C34.2148 4.18203 24.3386 13.974 24.3386 26.0529C24.3531 38.126 34.2206 47.9095 46.3964 47.9238H46.3972C46.3974 47.9238 46.3976 47.9236 46.3976 47.9233ZM46.3976 0C48.6119 0 51.7457 1.46355 54.0949 8.44725C55.6653 13.4358 56.5698 19.1717 56.5698 25.117C56.5698 25.4459 56.5671 25.7743 56.5617 26.102L56.5622 26.0528C56.5671 26.3311 56.5698 26.6594 56.5698 26.9884C56.5698 32.9337 55.6652 38.6695 53.985 44.068L54.0948 43.6581C51.7454 50.6416 48.6117 52.1053 46.3974 52.1053C44.1831 52.1053 41.0492 50.6418 38.7 43.6581C37.1296 38.6695 36.2249 32.9337 36.2249 26.9883C36.2249 26.6595 36.2276 26.331 36.2331 26.0033L36.2325 26.0528C36.2276 25.7743 36.2249 25.4461 36.2249 25.117C36.2249 19.1718 37.1295 13.4359 38.8097 8.03747L38.7001 8.44734C41.0492 1.46403 44.1829 0.000178091 46.3972 8.9798e-05C46.3973 8.97926e-05 46.3974 5.90737e-05 46.3976 0ZM46.3976 47.9233C47.1272 47.9233 48.7131 46.4346 50.0923 42.3365C51.5268 37.7442 52.3529 32.4648 52.3529 26.994C52.3529 26.663 52.3499 26.3327 52.3439 26.003L52.3446 26.0524C52.35 25.7723 52.3529 25.4419 52.3529 25.1108C52.3529 19.6403 51.5268 14.3608 49.9915 9.38863L50.0923 9.76848C48.7132 5.67028 47.1274 4.18158 46.3976 4.18158C45.6677 4.18158 44.0821 5.67028 42.7028 9.76848C41.2683 14.3607 40.4422 19.6401 40.4422 25.111C40.4422 25.4419 40.4452 25.7723 40.4513 26.102L40.4505 26.0526C40.4451 26.3326 40.4422 26.663 40.4422 26.994C40.4422 32.4647 41.2683 37.7441 42.8036 42.7163L42.7028 42.3364C44.082 46.4177 45.6677 47.9233 46.3976 47.9233ZM70.5652 26.0526C70.5653 27.2073 69.6292 28.1434 68.4745 28.1434H24.3204C23.1657 28.1434 22.2296 27.2074 22.2296 26.0527C22.2296 24.898 23.1657 23.9619 24.3204 23.9619H68.4745C69.6291 23.9619 70.5652 24.8979 70.5652 26.0526Z" fill="#FEECC0"/>
+</svg>
+            </div>
+            
+            <div className={styles.info_card}>
+                <h2>VISÃO</h2>
+                <p>Ser reconhecida pelas ações desenvolvidas para a conservação da biodiversidade atuando como fonte de inspiração para transformação de pessoas.</p>
+                <img src="/path-to-your-icon1.png" alt="Icon 1 Description" />
+            </div>
+            
+            <div className={styles.info_card}>
+                <h2>NOSSA MISSÃO</h2>
+                <p>Desenvolver pesquisas e projetos que tenham como objetivo promover a conservação da biodiversidade.</p>
+                <img src="/path-to-your-icon1.png" alt="Icon 1 Description" />
+            </div>
+        </section>
+
+      <section className={styles.projects}>
+        <h1>PROJECTS</h1>
+      </section>
+
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+          
       </footer>
 
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </main>
   );
 }
