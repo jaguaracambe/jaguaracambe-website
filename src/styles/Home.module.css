@@ -54,7 +54,7 @@
 
 .about_section {
   min-height: 100vh;
-  padding: 12vh;
+  padding: 20vh;
   background-color: #FFF5DD;
   font-family: Arial, sans-serif;
   text-align: baseline;
@@ -74,26 +74,48 @@
   width: 80%;
 }
 
+.info_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
 .info_card {
-  display: inline-block;
-  width: 30%;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 28%;
+  height: 45vh;
   margin: 0 1.5%;
+  padding: 20px 3%;
   vertical-align: top;
-  border: 20px;
+  border-radius: 20px;
   background-color: #0F2102;
   color: #FEECC0;
   text-align: center;
 }
 .info_card p {
   color: #FEECC0;
+  width: 100%;
 }
 
-.infoCard img {
+.info_card h2 {
+  color: #FEECC0;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Caesar Dressing;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.info_card svg {
   display: block;
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
+  max-width: 20%;
+
 }
 
 @media (max-width: 600px) {
