@@ -73,6 +73,10 @@ export default function Home() {
 
       <section className={styles.projects}>
         <h1>PROJECTS</h1>
+        <p></p>
+        <div>
+          
+        </div>
       </section>
 
 
