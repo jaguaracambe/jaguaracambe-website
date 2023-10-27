@@ -1,8 +1,11 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
+import Link from 'next/link';
+
 
 export default function Home() {
+  
   const projects = [
     {
       title: "EDUCAÇÃO AMBIENTAL",
@@ -30,7 +33,34 @@ export default function Home() {
     },
   ];
 
-  console.log(projects.banner);
+  const species = [
+    {
+      title: "CANÍDEOS",
+      link: '',
+      banner: "/species/canids.png",
+    },
+    {
+      title: "FELÍDEOS",
+      link:'',
+      banner: "/species/felids.png",
+    },
+    {
+      title: "PROCIONÍDEOS",
+      link:'',
+      banner: "/species/procyonids.png",
+    },
+    {
+      title: "MEFITÍDEOS",
+      link:'',
+      banner: "/species/mephitids.png",
+    },
+    {
+      title: "mustelídeos",
+      link:'',
+      banner: "/species/mustelídeos.jpg",
+    },
+  ];
+
 
   return (
     <main className={styles.homepage_container}>
@@ -157,8 +187,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.members}>
+      <section className={styles.species_container}>
+        <h1>species</h1>
+
+        <div className={styles.species_background_wrapper}>
+          <Image
+            src={"/images/species_background.jpeg"}
+            alt="Description of Image"
+            fill={true}
+          />
+        </div>
+      </section>
+
+      <section className={styles.members_container}>
         <h1>Membros</h1>
+        <Link href="/projects/environmental_education"> hi girl</Link>
+
       </section>
 
       <footer>Powered by </footer>

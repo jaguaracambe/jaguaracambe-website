@@ -275,12 +275,17 @@
   color: #224A04;
 }
 
-
-
-
-.learnMoreButton:hover {
-  background-color: #005ecf;
+.species_container {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
 }
+
+.species_background_wrapper{
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
 
 @media (max-width: 600px) {
  
