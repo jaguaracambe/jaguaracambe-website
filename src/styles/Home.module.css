@@ -14,7 +14,7 @@
   margin: 0;
   padding:0;
   width: 100vw;
-  position: relative;  /* This will allow us to position child elements */
+  position: relative;  /* -- */
   z-index: 3;
 }
 
@@ -59,7 +59,6 @@
   font-family: Arial, sans-serif;
   text-align: baseline;
   position: relative;
-  border: 1px solid red;
 }
 
 .about_section h1 {
@@ -68,7 +67,7 @@
 }
 
 .about_section p {
-  font-size: 1em;
+  font-size: 1.2rem;
   margin-bottom: 40px;
   color: #0F2102;
   width: 80%;
@@ -115,7 +114,172 @@
 .info_card svg {
   display: block;
   max-width: 20%;
+}
 
+.projects_container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFF5DD;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_container .project_content{
+    color: #0F2102;
+    padding-top: 15vh;
+    padding-left: 20vh;
+    padding-bottom: 5vh;
+}
+
+.project_content p {
+  color: #0F2102;
+  padding-top: 5vh;
+  font-size: 1.2rem;
+  width: 88%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  width: 80%;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.projectCard p {
+  font-size: 1.2rem;
+}
+
+.projectCard h2 {
+  color: #FEECC0;
+
+  font-family: Caesar Dressing;
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 2.75rem */
+}
+
+.imageContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 20px;
+  height: 0;
+   padding-bottom: 30.52%; 
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(51deg, #000 -57.7%, rgba(0, 0, 0, 0.00) 152.05%);
+  z-index: 2;
+  border-radius: 20px;
+}
+
+
+.projectBackground {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.projectContent {
+  padding: 4.3rem;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projectContent p{
+  width: 80%;
+}
+
+.learnMoreButton {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.projectContent button {
+  color: #FEECC0;
+  text-align: center;
+  font-family: Caesar Dressing;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.projectCard:nth-child(1) {
+  border: 3px solid #224A04;
+}
+
+.projectCard:nth-child(2) {
+  border: 3px solid #EE6B0C;
+}
+
+.projectCard:nth-child(3) {
+  border: 3px solid #000;
+}
+
+.projectCard:nth-child(4) {
+  border: 3px solid #224A04;
+}
+
+.projectCard:nth-child(1) .learnMoreButton {
+  border: 2px solid #FEECC0;
+  background-color: #224A04;
+}
+
+.projectCard:nth-child(2) .learnMoreButton {
+  background: #EE6B0C;
+  border: 2px solid #512200;
+  color: #512200;
+}
+
+.projectCard:nth-child(3) .learnMoreButton {
+  border: 2px solid #FEECC0;
+  background: #512200;
+  color: #FEECC0;
+}
+
+.projectCard:nth-child(4) .learnMoreButton {
+  border: 2px solid #224A04;
+  background: #FFF;  
+  color: #224A04;
+}
+
+
+
+
+.learnMoreButton:hover {
+  background-color: #005ecf;
 }
 
 @media (max-width: 600px) {
