@@ -12,24 +12,28 @@ export default function Home() {
       description:
         "A Jaguaracambé tem como um de seus alicerces a Educação Ambiental, tanto como um projeto sólido aplicável, quanto como uma finalidade maior intrínseca e inserida em todos os nossos projetos. A educação produz conhecimento e este conhecimento nos possibilita entender melhor o nosso mundo, suas complexidades, sua biodiversidade e beleza.",
       banner: "/projects_banners/environmental_education.jpg",
+      page_source: "/projects/EnvironmentalEducation"
     },
     {
       title: "sou eu, pequi",
       description:
         "Nós acreditamos neste projeto porque entendemos que a Pequi pode ser uma grande embaixadora da sua espécie e do Cerrado. Novos projetos podem surgir a partir desse trabalho e desejamos que essa história sensibilize muitas pessoas. Precisamos entender que conservação não se faz sozinho e que a nossa biodiversidade precisa de nós!",
       banner: "/projects_banners/it's_me_pequi.jpg",
+      page_source: "/projects/Pequi",
     },
     {
       title: "AVALIAÇÃO SANITÁRIA",
       description:
         "Com o objetivo de contribuir com informações sanitárias, os pesquisadores da Jaguaracambé vêm desenvolvendo projetos de pesquisa e investigação de agentes infecciosos que podem ser encontrados tanto em animais selvagens, quanto domésticos que circulam em unidades de conservação e áreas preservadas.",
       banner: "/projects_banners/health_assessment.jpg",
+      page_source: "/projects/HealthAssessment",
     },
     {
       title: "MONITORAMENTO",
       description:
         "Com o objetivo de contribuir com informações sanitárias, os pesquisadores da Jaguaracambé vêm desenvolvendo projetos de pesquisa e investigação de agentes infecciosos que podem ser encontrados tanto em animais selvagens, quanto domésticos que circulam em unidades de conservação e áreas preservadas.",
       banner: "/projects_banners/monitoring.jpg",
+      page_source: "/projects/Monitoring",
     },
   ];
 
@@ -81,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.about_section}>
+      <section id="about_section" className={styles.about_section}>
         <h1>QUEM SOMOS</h1>
         <p>
           A jaguaracambé é uma associação não governamental que visa desenvolver
@@ -151,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.projects_container}>
+      <section id="projects" className={styles.projects_container}>
         <div className={styles.project_content}>
           <h1>Projetos da jaguaracambé</h1>
           <p>
@@ -180,7 +184,7 @@ export default function Home() {
               <div className={styles.projectContent}>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
-                <button className={styles.learnMoreButton}>Saiba Mais +</button>
+                <Link href={project.page_source} className={styles.learnMoreButton}>Saiba Mais +</Link>
               </div>
             </div>
           ))}

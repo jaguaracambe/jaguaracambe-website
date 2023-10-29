@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "../../styles/EnvironmentalEducation.module.css";
+import styles from "../../styles/Pequi.module.css";
 import Header from "../../components/Header";
 
-export default function EnvironmentalEducation() {
+export default function Pequi() {
 
   return (
     <main className={styles.homepage_container}>
@@ -10,7 +10,7 @@ export default function EnvironmentalEducation() {
       <section className={styles.home_intro_section}>
         <div className={styles.image_wrapper}>
           <Image
-            src={"/images/jaguaracambé.jpeg"}
+            src={"/pequi/intro_pequi.png"}
             alt="Description of Image"
             priority={true}
             fill={true}

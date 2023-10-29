@@ -32,6 +32,9 @@
   font-weight: 400;
   line-height: 120%; /* 25.2px */
   min-width: 200px;
+  border: 1px solid #224A04;
+
+
 }
 
 .logo img {

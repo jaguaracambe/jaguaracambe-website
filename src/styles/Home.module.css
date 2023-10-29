@@ -226,7 +226,7 @@
 
 }
 
-.projectContent button {
+.learnMoreButton {
   color: #FEECC0;
   text-align: center;
   font-family: Caesar Dressing;
@@ -253,24 +253,24 @@
 }
 
 .projectCard:nth-child(1) .learnMoreButton {
-  border: 2px solid #FEECC0;
+  border: 3px solid #FEECC0;
   background-color: #224A04;
 }
 
 .projectCard:nth-child(2) .learnMoreButton {
   background: #EE6B0C;
-  border: 2px solid #512200;
+  border: 3px solid #512200;
   color: #512200;
 }
 
 .projectCard:nth-child(3) .learnMoreButton {
-  border: 2px solid #FEECC0;
+  border: 3px solid #FEECC0;
   background: #512200;
   color: #FEECC0;
 }
 
 .projectCard:nth-child(4) .learnMoreButton {
-  border: 2px solid #224A04;
+  border: 3px solid #224A04;
   background: #FFF;  
   color: #224A04;
 }
