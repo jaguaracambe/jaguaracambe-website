@@ -40,7 +40,7 @@ export default function Home() {
   const species = [
     {
       title: "CANÍDEOS",
-      link: '',
+      link: 'sidedela.',
       banner: "/species/canids.png",
     },
     {
@@ -61,7 +61,7 @@ export default function Home() {
     {
       title: "mustelídeos",
       link:'',
-      banner: "/species/mustelídeos.jpg",
+      banner: "/species/mustelídeos.png",
     },
   ];
 
@@ -184,7 +184,12 @@ export default function Home() {
               <div className={styles.projectContent}>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
-                <Link href={project.page_source} className={styles.learnMoreButton}>Saiba Mais +</Link>
+                <Link
+                  href={project.page_source}
+                  className={styles.learnMoreButton}
+                >
+                  Saiba Mais +
+                </Link>
               </div>
             </div>
           ))}
@@ -192,7 +197,6 @@ export default function Home() {
       </section>
 
       <section className={styles.species_container}>
-        <h1>species</h1>
 
         <div className={styles.species_background_wrapper}>
           <Image
@@ -201,12 +205,49 @@ export default function Home() {
             fill={true}
           />
         </div>
+      
+        
+        <div className={styles.species_content}>
+          <h1>ESPÉCIES</h1>
+          <p>
+            Nossa ONG tem esse nome em homenagem ao cachorro do mato vinagre,
+            também conhecido como jaguaracambé. Essa é uma espécie ameaçada de
+            extinção e por ser um animal de difícil detecção, ainda temos poucas
+            informações sobre sua ecologia. É um compromisso da Jaguaracambé nao
+            apenas preservar o cachorro do mato vinagre mas também expandir
+            entendimento que temos a seu respeito.
+          </p>
+          <p>
+            Apesar do cachorro do mato vinagre ser o animal que carrega o nome
+            da nossa ONG não nos limitamos à ele, nosso principal objetivo é a
+            preservação da biodiversidade, o que implica na luta pela
+            conservação do máximo de espécies possível.
+          </p>
+        </div>
+
+        
+
+        <div className={styles.species_cards_container}>
+          {species.map((specie, index) => (
+            <div key={index} className={styles.species_card}>
+              <Image
+                src={specie.banner}
+                alt={`${specie.title} Banner`}
+                fill={true}
+                className={styles.species_banner}
+              />
+              <Link href={specie.link} className={styles.species_link}>
+                {specie.title}
+              </Link>
+            </div>
+          ))}
+        </div>
+
       </section>
 
       <section className={styles.members_container}>
         <h1>Membros</h1>
         <Link href="/projects/environmental_education"> hi girl</Link>
-
       </section>
 
       <footer>Powered by </footer>
