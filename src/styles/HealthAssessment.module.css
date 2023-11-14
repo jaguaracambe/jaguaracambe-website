@@ -120,4 +120,21 @@
     height: auto;
     padding: 20px 20px 40px 20px;
   }
+
+  .health_informative_section {
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FEECC0;
+  }
+  
+  
+  .health_informative_content{
+    padding: 6vh 4vw 6vh 4vh;
+    width: 100%;
+    height: auto;
+  }
+
 }

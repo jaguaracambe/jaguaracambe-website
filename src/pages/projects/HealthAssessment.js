@@ -83,12 +83,12 @@ export default function HealthAssessment() {
 
       <section className={styles.health_informative_section}>
         <div className={styles.health_informative_content}>
-          <h1>O PROJETO</h1>
+          <p>Com o objetivo de contribuir com informações sanitárias, necessárias tanto para a promoção de estratégias mais eficazes de conservação de fauna, quanto para o estabelecimento de políticas diretamente ligadas à saúde pública, os pesquisadores da Jaguaracambé vêm desenvolvendo projetos de pesquisa e investigação de agentes infecciosos que podem ser encontrados tanto em animais selvagens, quanto domésticos que circulam em unidades de conservação e áreas preservadas.</p>
           <p>
-          A proximidade das áreas preservadas com áreas urbanas e rurais vêm possibilitando um contato maior entre as espécies de animais silvestres com os animais domésticos e humanos, esse fator aliado à crise da biodiversidade e à diminuição das espécies, favorece a adaptação de microrganismos causadores de doenças, o que consequentemente pode facilitar o surgimento de novas enfermidades. Além disso, o estabelecimento de doenças infecciosas pode contribuir para a extinção local de várias espécies de animais selvagens, o que por sua vez, também ocasiona a redução das populações de espécies.
+          Atualmente está em curso o projeto de avaliação sanitária de carnívoros em Unidades de Conservação (UCs) do Distrito Federal. As UCs trabalhadas são: Estação Ecológica de Águas Emendadas (ESEC-AE), Parque Nacional de Brasília (PNB) e Área de Proteção Ambiental (APA) da Cafuringa. Neste trabalho, são realizadas expedições periódicas, de dez dias cada uma, nessas três UCs. Durante as expedições é feita a captura das espécies alvo (Ordem Carnívora), com o objetivo de colher amostras de material biológico, necessárias para avaliação clínica e pesquisa diagnóstica de agentes infecciosos. 
           </p>
           <p>
-          Todos esses fatores estão diretamente relacionados ao conceito de Saúde Única, que reconhece a importância do equilíbrio entre a saúde humana, animal e ambiental para que sejam estabelecidas políticas públicas adequadas de prevenção e controle de enfermidades.
+          As capturas são feitas com todo o cuidado para que não ocorra nenhum tipo de intercorrência com os animais, que são soltos após plena recuperação anestésica, no mesmo local de captura.
           </p>
         </div>
 
