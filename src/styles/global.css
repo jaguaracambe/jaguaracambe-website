@@ -45,11 +45,19 @@ img {
   height: auto;
 }
 
+footer {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #FEECC0;
+}
+
 @media (max-width: 600px) {
 
   h1 {
     font-size: 3.5rem;
   }
-
-
 }

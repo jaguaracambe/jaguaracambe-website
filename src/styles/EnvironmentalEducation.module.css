@@ -126,36 +126,83 @@
 
 .supportBody {
   position: absolute;
-  top: 40%;
+  bottom: 20%;
   left: 10%;
-  width: 30%;
+  width: 36%;
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .qrCodePlaceholder {
   /* Replace the dimensions as needed based on your actual QR code size */
-  width: 150px;
-  height: 150px;
-  background-color: #000; /* Placeholder color */
-  margin-right: 2rem;
-}
-.contactInfo {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 30%;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff; /* Placeholder color */
+  border-radius: 1.2rem;
 }
 
-.discoverButton, .productsButton {
-  background: #f8a22f; /* Adjust color as needed */
+.qrCodePlaceholder {
+  padding-bottom: 30vh;
+}
+
+.pixEmail {
+  display: flex;
+  justify-content: space-between;
+}
+.pixEmail img {
+  height: 1.5rem;
+  padding-right: 10px;
+}
+
+.contactInfo {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  align-items: center;
+}
+
+.contactInfo h2,
+.contactInfo h3,
+.supportBody h3{
+  color: #FCFFF0;
+  font-family: Caesar Dressing;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 5.775rem */
+  padding: 0;
+  margin: 0;
+}
+.contactInfo p {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.contactInfo h3,
+.supportBody h3 {
+  font-size: 2.5rem;
+}
+
+.productsButton {
+  background: #EE6B0C; /* Adjust color as needed */
   border: none;
-  border-radius: 20px;
-  padding: 1em 2em;
+  border-radius: 5rem;
+  padding: 0.5em 2em;
   color: #fff;
   font-weight: bold;
   margin: 0.5em;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin: 20px 0px;
 }
 
 .discoverButton:hover, .productsButton:hover {
@@ -173,8 +220,19 @@
   color: #fff; /* Adjust as needed */
   text-decoration: none;
 }
+.pequi_media {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.pequi_media p{
+  padding-top: 0px;
+  margin-top: -3px;
+}
 
-
+.homepage_container footer {
+  margin-top: -5px;
+}
 
 @media (max-width: 600px) {
 

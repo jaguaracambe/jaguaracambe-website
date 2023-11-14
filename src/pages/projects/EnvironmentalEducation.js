@@ -31,12 +31,8 @@ export default function EnvironmentalEducation() {
       <section className={styles.home_intro_section}>
         <div className={styles.image_wrapper}>
           <Image
-            src={
-              windowWidth > 650
-                ? intro_education
-                : intro_education_mobile
-            }
-            alt="Description of Image"
+            src={windowWidth > 650 ? intro_education : intro_education_mobile}
+            alt="Estudantes no zoologico aprendendo sobre educaçao ambiental com a Jaguaracambé"
             width={"100vh"}
             height={"auto"}
             priority={true}
@@ -51,6 +47,7 @@ export default function EnvironmentalEducation() {
       <section className={styles.education_definition_section}>
         <Image
           src={windowWidth > 650 ? kid_learning : kid_learning_mobile}
+          atl="Estudante no zoológico aprendendo sobre educaçao ambiental coma Jaguaracambé"
           style={{
             width: windowWidth > 650 ? "auto" : "100vw",
             height: windowWidth > 650 ? "100vh" : "auto",
@@ -80,6 +77,7 @@ export default function EnvironmentalEducation() {
       <section className={styles.education_informative_section}>
         <Image
           src={group_background}
+          alt="Grupo de educaçao ambiental"
           style={{
             width: "100vw",
             height: "auto",
@@ -134,29 +132,61 @@ export default function EnvironmentalEducation() {
           </p>
         </div>
         <div className={styles.supportBody}>
-          {/* Placeholder for the image */}
           <div className={styles.qrCodePlaceholder}>
-            {/* Assuming you want to place a QR code or image here */}
           </div>
+          <h3>PIX</h3>
           <div className={styles.pixEmail}>
-              <p>Pix: financeiro@jaguaracambe.org.br</p>
-              {/* Add any additional contact details here */}
-            </div>
+            <img src="/suport/email.svg" alt="Icone de email" />
+            <p>Pix: financeiro@jaguaracambe.org.br</p>
+          </div>
         </div>
         <div className={styles.contactInfo}>
-            <button className={styles.discoverButton}>CONHEÇA</button>
-            <button className={styles.productsButton}>NOSSOS PRODUTOS</button>
-            <div className={styles.socialMedia}>
-              {/* Icons or text for social media links */}
-              <a href="your-linkedin-url">LinkedIn</a>
-              <a href="your-instagram-url">Instagram</a>
-              <a href="your-facebook-url">Facebook</a>
-            </div>
+          <h2>CONHEÇA</h2>
+          <a href="your-linkedin-url" className={styles.productsButton}>
+            <h3>NOSSOS PRODUTOS</h3>
+          </a>
+          <p>Acesse nossas redes</p>
+          <div className={styles.socialMedia}>
+            {/* Icons or text for social media links */}
+            <a href="your-linkedin-url">
+              {" "}
+              <img
+                src="/suport/linkedin.svg"
+                alt="link do linkedin da Jaguaracamé"
+              />{" "}
+            </a>
+            <a href="your-instagram-url">
+              {" "}
+              <img
+                src="/suport/instagram.svg"
+                alt="link do intagram da Jaguaracambé link"
+              />{" "}
+            </a>
+            <a href="your-facebook-url">
+              {" "}
+              <img
+                src="/suport/facebook.svg"
+                alt="link do facebook da Jaguaracambé"
+              />{" "}
+            </a>
           </div>
-
+          <p>Acesse também as redes do projeto Sou eu, Pequi!</p>
+          <div className={styles.pequi_media}>
+            <a href="your-instagram-url">
+              {" "}
+              <img
+                src="/suport/instagram_pequi.svg"
+                alt="Link do intagram da Pequi"
+              />{" "}
+            </a>
+            <p>Sou Eu, Pequi!</p>
+          </div>
+        </div>
       </section>
 
-      <footer>Powered by link</footer>
+      <footer className="suport_footer">
+        © Copyright Jaguaracambé - Associação para Conservação da Biodiversidade
+      </footer>
     </main>
   );
 }
