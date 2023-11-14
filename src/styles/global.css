@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+main, section {
+  margin: 0;
+}
 
 a {
   color: inherit;
