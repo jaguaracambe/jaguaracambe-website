@@ -46,7 +46,7 @@
   position: absolute;  /* Absolute positioning relative to .home_intro_Section */
   left: 10%;  /* Adjust this value to move the text horizontally */
   top: 50%;   /* Adjust this value to move the text vertically */
-  color: #fff; 
+  color: #FCFFF0; 
   z-index: 2;
   text-align: center;
 }
@@ -60,6 +60,8 @@
   color: #0F2102;
   width: 100%;
   margin-top: 24px;
+  text-shadow: none;
+
 }
 
 .education_definition_section {
@@ -68,6 +70,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #FCFFF0;
 }
 
 
@@ -79,7 +82,25 @@
 
 .education_informative_section {
   width: 100vw;
-  height: 100vh;
+  position: relative;
+}
+
+.informative_content{
+  position: absolute;
+  top: 14%;
+  left: 6%;
+  width: 58%;
+  background-color: #FCFFF0;
+  height: auto;
+  padding: 10px 30px 30px 30px;
+  border-radius: 1.2rem;
+}
+
+.informative_content p {
+  color: #0F2102;
+  padding-top: 24px;
+  text-shadow: none;
+
 }
 
 @media (max-width: 600px) {
@@ -110,12 +131,20 @@
     height: auto; 
     display: flex;
     flex-direction: column;
-
   }
   
   
   .educantion_definition_content{
-    width: 40vw;
-    height: 100vh;
+    width: 100vw;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .informative_content{
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
   }
 }

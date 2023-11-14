@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import React, { useState, useEffect } from 'react';
 import kid_learning from '../../../public/education/kid_learning.jpg'
 import kid_learning_mobile from '../../../public/education/kid_learning_mobile.jpg'
+import group_background from '../../../public/education/group_background.jpg'
 
 
 
@@ -45,16 +46,14 @@ export default function EnvironmentalEducation() {
       </section>
 
       <section className={styles.education_definition_section}>
-      
-          <Image
-            src={windowWidth > 650 ? kid_learning : kid_learning_mobile}
-            style={{
-              width: windowWidth > 650 ? "auto" : "100vw",
-              height: windowWidth > 650 ? "100vh" : "auto",
-              
-            }}
-          />
-        
+        <Image
+          src={windowWidth > 650 ? kid_learning : kid_learning_mobile}
+          style={{
+            width: windowWidth > 650 ? "auto" : "100vw",
+            height: windowWidth > 650 ? "100vh" : "auto",
+          }}
+        />
+
         <div className={styles.educantion_definition_content}>
           <h1>O que é educação ambiental?</h1>
           <p>
@@ -76,7 +75,18 @@ export default function EnvironmentalEducation() {
       </section>
 
       <section className={styles.education_informative_section}>
-
+        <Image
+          src={group_background}
+          style={{
+            width: "100vw",
+            height: "auto",
+          }}
+        />
+        <div className={styles.informative_content}>
+          <p>Entendemos que para conservar é necessário, antes de qualquer coisa, conhecer pois conservamos aquilo que conhecemos e temos afinidade, aquilo que está conectado conosco. Assim, o Projeto de Educação Ambiental da ONG Jaguacambé tem como objetivo maior diminuir o “analfabetismo ambiental”, ou seja, a falta de conhecimento sobre o meio ambiente. O nosso grande desafio é promover a mudança de valores, posturas e atitudes, em prol da sustentabilidade e conservação da biodiversidade do meio ambiente como um todo.</p>
+          <p>Dentro do nosso projeto iremos trabalhar a Educação Ambiental em duas vertentes: em âmbito Formal (dentro ambiente de ensino), prioritariamente no Ensino Fundamental, e Não-Formal (fora do ambiente de ensino), para o público em geral, com disseminação de conhecimentos a respeito do meio ambiente, preservação ambiental e sustentabilidade, promovendo momentos de reflexões e de interações com o meio natural, favorecendo o despertar de uma consciência crítica.</p>
+          <p>Atualmente a Jaguaracambé vem desenvolvendo um trabralho no Centro de Ensino Fundamental 113 – Recanto das Emas / DF juntamente com o corpo docente da escola com o objetivo de disseminar conhecimentos a respeito do meio ambiente, preservação ambiental e sustentabilidade, em especial do Cerrado no Distrito Federal, e dessa forma, proporcionar momentos de aprendizagem e reflexão, em busca da transformação pessoal.</p>
+        </div>
       </section>
 
       <footer>Powered by link</footer>
