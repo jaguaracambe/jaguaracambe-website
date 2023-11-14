@@ -11,6 +11,7 @@ import lobos_guará from "/public/pequi/lobos_guará.jpg";
 import lobos_guara_adultos from "/public/pequi/lobós_guaras_adultos.jpg";
 import monitoring_background from "/public/pequi/monitoring_background.jpg";
 import monitoring_background_mobile from "/public/pequi/monitoring_background_mobile.jpg";
+import pequi_in_nature from "/public/pequi/pequi_in_nature.jpg";
 
 
 export default function Pequi() {
@@ -151,6 +152,28 @@ export default function Pequi() {
           </p>
           <p>
           Todo esse cuidado foi muito importante para minimizar os riscos para a soltura da Pequi. Isso significa que não há riscos? Infelizmente não. As ameaças para os lobos de vida livre são as mesmas que a Pequi vai enfrentar e, por este motivo, foi preciso ter a convicção de que ela estava pronta para este desafio.
+          </p>
+        </div>
+      </section>
+
+      <section className={styles.pequi_nature_section}>
+        <Image
+          src={pequi_in_nature}
+          alt="Pequi em um recinto"
+          style={{
+            width: "100vw",
+            height: "auto",
+          }}
+        />
+        <div className={styles.pequi_nature_content}>
+          <p>
+          Durante esses primeiros meses de monitoramento já foi possível visualizar todo seu deslocamento por uma grande área do Cerrado e seu progresso de exploração. Além disso, são feitas visualizações periódicas da Pequi de forma presencial través do rastreamento por rádiotelemetria, para avaliação de suas condições. Pequi segue bem e enfrentando com êxito os desafios da vida livre.
+          </p>
+          <p>
+          Nós acreditamos neste projeto porque entendemos que a Pequi pode ser uma grande embaixadora da sua espécie e do Cerrado. Novos projetos podem surgir a partir desse trabalho e desejamos que essa história sensibilize muitas pessoas. Precisamos entender que conservação não se faz sozinho e que a nossa biodiversidade precisa de nós!
+          </p>
+          <p>
+          Ao longo de todo o processo de monitoramento teremos a enorme alegria de compartilhar com todos vocês a evolução da Pequi. E desejamos ver ainda muitas Pequizinhas espalhadas por este Cerrado lindo, que tanto amamos.
           </p>
         </div>
       </section>

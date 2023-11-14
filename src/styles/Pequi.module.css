@@ -104,6 +104,33 @@
   padding-top: 26px;
 }
 
+.pequi_nature_section {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pequi_nature_content{
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  width: 42%;
+  background-color: #FCFFF0;
+  height: auto;
+  padding: 10px 30px 30px 30px;
+  border-radius: 1.2rem;
+  margin: 0;
+}
+
+.pequi_nature_content p {
+  color: #0F2102;
+  padding-top: 24px;
+  text-shadow: none;
+}
+
 
 
 
@@ -148,5 +175,18 @@
     height: auto;
   }
 
+  .pequi_nature_content{
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: #512200;
+    border-radius: 0;
+  }
+
+  .pequi_nature_content p {
+    color: #FCFFF0;
+  }
 
 }
