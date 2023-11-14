@@ -54,3 +54,68 @@
 .homepage_container p {
   font-size: 1.5rem;
 }
+
+.education_definition_section h1, 
+.education_definition_section p  {
+  color: #0F2102;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.education_definition_section {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.educantion_definition_content{
+  padding: 14vh 4vh 0vh 0vh;
+  width: 64vw;
+  height: 100vh;
+}
+
+.education_informative_section {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+
+  .home_content {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    z-index: 2;
+    text-align: center;
+  }
+
+  .image_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: none;
+    z-index: 1;
+  }
+
+
+  .education_definition_section {
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  
+  .educantion_definition_content{
+    width: 40vw;
+    height: 100vh;
+  }
+}
