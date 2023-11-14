@@ -9,6 +9,7 @@ import kid_learning from '../../../public/education/kid_learning.jpg'
 import kid_learning_mobile from '../../../public/education/kid_learning_mobile.jpg'
 import group_background from '../../../public/education/group_background.jpg'
 import suport_education_background from '../../../public/suport/suport_education_background.jpg'
+import suport_education_background_mobile from '../../../public/suport/suport_education_background_mobile.jpg'
 
 
 export default function EnvironmentalEducation() {
@@ -118,7 +119,7 @@ export default function EnvironmentalEducation() {
 
       <section className={styles.supportContainer}>
         <Image
-          src={suport_education_background}
+          src={windowWidth > 600 ? suport_education_background : suport_education_background_mobile}
           style={{
             width: "100vw",
             height: "auto",
@@ -133,6 +134,10 @@ export default function EnvironmentalEducation() {
         </div>
         <div className={styles.supportBody}>
           <div className={styles.qrCodePlaceholder}>
+            <img
+              src="/suport/qrcode.jpeg"
+              alt="Link do intagram da Pequi"
+            />
           </div>
           <h3>PIX</h3>
           <div className={styles.pixEmail}>
@@ -147,37 +152,32 @@ export default function EnvironmentalEducation() {
           </a>
           <p>Acesse nossas redes</p>
           <div className={styles.socialMedia}>
-            {/* Icons or text for social media links */}
             <a href="your-linkedin-url">
-              {" "}
               <img
                 src="/suport/linkedin.svg"
                 alt="link do linkedin da Jaguaracamé"
-              />{" "}
+              />
             </a>
             <a href="your-instagram-url">
-              {" "}
               <img
                 src="/suport/instagram.svg"
                 alt="link do intagram da Jaguaracambé link"
-              />{" "}
+              />
             </a>
             <a href="your-facebook-url">
-              {" "}
               <img
                 src="/suport/facebook.svg"
                 alt="link do facebook da Jaguaracambé"
-              />{" "}
+              />
             </a>
           </div>
           <p>Acesse também as redes do projeto Sou eu, Pequi!</p>
           <div className={styles.pequi_media}>
             <a href="your-instagram-url">
-              {" "}
               <img
                 src="/suport/instagram_pequi.svg"
                 alt="Link do intagram da Pequi"
-              />{" "}
+              />
             </a>
             <p>Sou Eu, Pequi!</p>
           </div>

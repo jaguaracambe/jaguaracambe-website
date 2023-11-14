@@ -8,7 +8,6 @@
   top:0;
   left: 0;
   margin: 0;
-  
 }
 
 .home_intro_section {
@@ -143,6 +142,13 @@
   height: 200px;
   background-color: #ffffff; /* Placeholder color */
   border-radius: 1.2rem;
+  position: relative;
+}
+.qrCodePlaceholder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .qrCodePlaceholder {
@@ -227,7 +233,7 @@
 }
 .pequi_media p{
   padding-top: 0px;
-  margin-top: -3px;
+  margin-top: -6px;
 }
 
 .homepage_container footer {
@@ -278,4 +284,134 @@
     top: 0;
     left: 0;
   }
+
+  .supportContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .supportContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .supportHeader,
+  .supportBody,
+  .contactInfo {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .supportHeader h1 {
+    font-size: 3rem;
+    margin: 0px;
+  }
+  .supportContainer p{
+    font-size: 1.0rem
+  }
+  .supportHeader p {
+    width: 94vw;
+    font-size: 1rem;
+  }
+
+
+  .supportBody {
+    padding-top: 12px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .qrCodePlaceholder {
+    padding-bottom: 0;
+  }
+
+  .qrCodePlaceholder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .homepage_container footer {
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .pixEmail {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pixEmail img {
+    height: 1.3rem;
+    padding-right: 0px;
+    display: none;
+  }
+
+  .contactInfo {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    align-items: center;
+  }
+  
+  .contactInfo h2,
+  .contactInfo h3,
+  .supportBody h3{
+    color: #FCFFF0;
+    font-family: Caesar Dressing;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 5.775rem */
+    padding: 0;
+    margin: 0;
+  }
+  .contactInfo p {
+    color: #fff;
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  
+  .contactInfo h3,
+  .supportBody h3 {
+    font-size: 2.5rem;
+  }
+  
+  .productsButton {
+    background: #EE6B0C; /* Adjust color as needed */
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5em 2em;
+    color: #fff;
+    font-weight: bold;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px 0px;
+  }
+
+  .socialMedia {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+  }
+  .socialMedia a {
+    width: 40px;
+  }
+ 
+
 }
