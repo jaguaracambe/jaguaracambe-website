@@ -15,6 +15,7 @@ import pequi_in_nature from "/public/pequi/pequi_in_nature.jpg";
 
 
 export default function Pequi() {
+
   const [windowWidth, setWindowWidth] = useState(null);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function Pequi() {
               : intro_backgroung_pequi_mobile
           }
           alt="Foto da lobo guará Pequi"
-          width={"100vh"}
+          width={"100vw"}
           height={"auto"}
           priority={true}
         />

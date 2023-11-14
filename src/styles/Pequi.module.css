@@ -22,6 +22,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: hidden;
+}
+
+.home_intro_section img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .home_content {
