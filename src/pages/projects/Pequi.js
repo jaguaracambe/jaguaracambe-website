@@ -8,6 +8,10 @@ import intro_backgroung_pequi_mobile from "/public/pequi/intro_pequi_mobile.jpg"
 import pequi_cub from "/public/pequi/pequi_cub.jpg";
 import pequi_cub_mobile from "/public/pequi/pequi_cub_mobile.jpg";
 import lobos_guará from "/public/pequi/lobos_guará.jpg";
+import lobos_guara_adultos from "/public/pequi/lobós_guaras_adultos.jpg";
+import monitoring_background from "/public/pequi/monitoring_background.jpg";
+import monitoring_background_mobile from "/public/pequi/monitoring_background_mobile.jpg";
+
 
 export default function Pequi() {
   const [windowWidth, setWindowWidth] = useState(null);
@@ -78,7 +82,7 @@ export default function Pequi() {
       <section className={styles.pequi_informative_section}>
         <Image
           src={lobos_guará}
-          alt="Grupo de educaçao ambiental"
+          alt="Lobos guarás resgatados já adultos"
           style={{
             width: "100vw",
             height: "auto",
@@ -113,6 +117,44 @@ export default function Pequi() {
           </p>
         </div>
       </section>
+
+      <section className={styles.lobos_guara_adultos}> 
+      <Image
+          src={lobos_guara_adultos}
+          alt="Grupo de educaçao ambiental"
+          style={{
+            width: "100vw",
+            height: "auto",
+          }}
+        />
+      </section>
+
+      <section className={styles.monitoring_section}>
+        <Image
+          src={windowWidth > 650 ? monitoring_background : monitoring_background_mobile}
+          atl="Lobo guará Pequi com o seu colar de monitoramento"
+          style={{
+            width: windowWidth > 650 ? "auto" : "100vw",
+            height: windowWidth > 650 ? "100vh" : "auto",
+          }}
+        />
+
+        <div className={styles.monitoring_section_content}>
+          <p>
+          O monitoramento da Pequi, foi realizado por câmeras para reduzir ao máximo o contato com humanos, e foi possível vê-la interagindo com lobos de vida livre que se aproximavam do recinto. Após verificadas as condições para soltura (habilidade de caça, redução do imprinting humano, consumo de frutos nativos, e etc), ela recebeu um colar GPS, doado pelo Instituto Smithsonian, para o monitoramento que permite rastrear sua localização enquanto ela se desloca pelo Cerrado.
+          </p>
+          <p>
+          Cerca de trinta dias antes da soltura, o colar foi instalado e foi realizado um check-up geral. Além disso, a equipe da Jaguaracambé esteve em campo, fazendo um levantamento sanitário dos carnívoros do Cerrado, inclusive na área de soltura da Pequi. Também foram realizadas atividades com a comunidade local para explicar o projeto e os passos a seguir no período pós-soltura. Este trabalho é muito importante para protegê-la e conscientizar a população da importância da conservação do lobo-guará e do Cerrado.
+          </p>
+          <p>
+          No dia 17 de abril de 2023 a Pequi foi solta. Foi realizado uma soltura branda, em que o recinto foi aberto e acompanhada a sua livre e espontânea saída do recinto. Após isso, o monitoramento através do colar GPS segue sendo feito até o presente momento.
+          </p>
+          <p>
+          Todo esse cuidado foi muito importante para minimizar os riscos para a soltura da Pequi. Isso significa que não há riscos? Infelizmente não. As ameaças para os lobos de vida livre são as mesmas que a Pequi vai enfrentar e, por este motivo, foi preciso ter a convicção de que ela estava pronta para este desafio.
+          </p>
+        </div>
+      </section>
+
 
       <footer>
         © Copyright Jaguaracambé - Associação para Conservação da Biodiversidade

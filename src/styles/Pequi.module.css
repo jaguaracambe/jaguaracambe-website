@@ -78,6 +78,33 @@
   text-shadow: none;
 
 }
+.lobos_guara_adultos {
+  width: 100vw;
+  position: relative;  /* -- */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.monitoring_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #512200;
+  justify-content: space-between;
+}
+
+.monitoring_section_content {
+    padding: 16vh 10vh 0vh 10vh;
+    width: 80vw;
+    height: 100vh;
+}
+
+.monitoring_section_content p{
+  padding-top: 26px;
+}
+
+
 
 
 @media (max-width: 600px) {
@@ -106,9 +133,19 @@
     background-color: #512200;
     border-radius: 0;
   }
-  
+
   .informative_content p {
     color: #FCFFF0;
+  }
+
+  .monitoring_section {
+    height: auto;
+    flex-direction: column;
+  }
+  .monitoring_section_content {
+    padding: 5vh 5vw 5vh 5vw;
+    width: 100vw;
+    height: auto;
   }
 
 
