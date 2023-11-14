@@ -40,8 +40,7 @@ export default function EnvironmentalEducation() {
           />
         </div>
         <div className={styles.home_content}>
-          <h1>JAGUARACAMBÉ</h1>
-          <p>Associação para Conservação da Biodiversidade</p>
+          <h1>EDUCAÇÃO AMBIENTAL</h1>
         </div>
       </section>
 

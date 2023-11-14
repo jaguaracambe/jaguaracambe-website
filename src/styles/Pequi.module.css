@@ -32,3 +32,84 @@
   z-index: 2;
   text-align: center;
 }
+
+.pequi_definition_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #512200;
+  justify-content: space-between;
+}
+
+.pequi_definition_content {
+    padding: 16vh 5vh 0vh 10vh;
+    width: 60vw;
+    height: 100vh;
+}
+
+.pequi_definition_content p{
+  padding-top: 26px;
+}
+
+.pequi_informative_section {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.informative_content{
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  width: 42%;
+  background-color: #FCFFF0;
+  height: auto;
+  padding: 10px 30px 30px 30px;
+  border-radius: 1.2rem;
+  margin: 0;
+}
+
+.informative_content p {
+  color: #0F2102;
+  padding-top: 24px;
+  text-shadow: none;
+
+}
+
+
+@media (max-width: 600px) {
+  .home_content {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .pequi_definition_section {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .pequi_definition_content {
+    padding: 10vh 5vw 5vh 5vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .informative_content{
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: #512200;
+    border-radius: 0;
+  }
+  
+  .informative_content p {
+    color: #FCFFF0;
+  }
+
+
+}
