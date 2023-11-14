@@ -74,6 +74,32 @@
   justify-content: flex-start;
 }
 
+
+.health_informative_section h1, 
+.health_informative_section p  {
+  color: #0F2102;
+  width: 100%;
+  margin-top: 24px;
+
+}
+
+.health_informative_section {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FEECC0;
+}
+
+
+.health_informative_content{
+  padding: 14vh 4vw 0vh 14vh;
+  width: 60vw;
+  height: 100vh;
+}
+
+
 @media (max-width: 600px) {
   .home_content {
     top: 60%;
