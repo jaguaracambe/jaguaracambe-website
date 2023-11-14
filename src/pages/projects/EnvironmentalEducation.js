@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "../../styles/EnvironmentalEducation.module.css";
 import Header from "../../components/Header";
 import React, { useState, useEffect } from 'react';
+import intro_education from '../../../public/education/intro_education.jpeg'
+import intro_education_mobile from '../../../public/education/intro_education_mobile.jpg'
+
 import kid_learning from '../../../public/education/kid_learning.jpg'
 import kid_learning_mobile from '../../../public/education/kid_learning_mobile.jpg'
 import group_background from '../../../public/education/group_background.jpg'
@@ -30,12 +33,12 @@ export default function EnvironmentalEducation() {
           <Image
             src={
               windowWidth > 650
-                ? "/education/intro_education.png"
-                : "/education/intro_education_mobile.jpg"
+                ? intro_education
+                : intro_education_mobile
             }
             alt="Description of Image"
-            width={windowWidth > 650 ? 1599 : 300}
-            height={windowWidth > 650 ? 582 : 1292}
+            width={"100vh"}
+            height={"auto"}
             priority={true}
           />
         </div>
