@@ -30,7 +30,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .home_content {
@@ -42,10 +41,49 @@
   text-align: center;
 }
 
+
+.health_definition_section h1, 
+.health_definition_section p  {
+  color: #0F2102;
+  width: 100%;
+  margin-top: 24px;
+
+}
+
+.health_definition_section {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FEECC0;
+}
+
+
+.health_definition_content{
+  padding: 14vh 8vw 0vh 0vh;
+  width: 60vw;
+  height: 100vh;
+}
+
 @media (max-width: 600px) {
   .home_content {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .health_definition_section {
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .health_definition_content{
+    width: 100vw;
+    height: auto;
+    padding: 20px 20px 20px 20px;
   }
 }
