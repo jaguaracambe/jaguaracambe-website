@@ -84,7 +84,7 @@ export default function Pequi() {
       <section className={styles.pequi_informative_section}>
         <Image
           src={lobos_guará}
-          alt="Lobos guarás resgatados já adultos"
+          alt="Lobos guarás resgatados quando eram filhotes"
           style={{
             width: "100vw",
             height: "auto",
@@ -121,14 +121,14 @@ export default function Pequi() {
       </section>
 
       <section className={styles.lobos_guara_adultos}> 
-      <Image
-          src={lobos_guara_adultos}
-          alt="Grupo de educaçao ambiental"
-          style={{
-            width: "100vw",
-            height: "auto",
-          }}
-        />
+        <Image
+            src={lobos_guara_adultos}
+            alt="Lobos guarás resgatados já adultos"
+            style={{
+              width: "100vw",
+              height: "auto",
+            }}
+          />
       </section>
 
       <section className={styles.monitoring_section}>

@@ -8,7 +8,7 @@ import health_intro  from '../../../public/health_assessment/health_intro.jpg'
 import health_intro_mobile  from '../../../public/health_assessment/health_intro_mobile.jpg'
 import researcher_working  from '../../../public/health_assessment/researcher_working.jpg'
 import researcher_working_mobile  from '../../../public/health_assessment/researcher_working_mobile.jpg'
-
+import animal_helth_avaliation from '../../../public/health_assessment/animal_helth_avaliation.jpg'
 
 export default function HealthAssessment() {
 
@@ -65,6 +65,18 @@ export default function HealthAssessment() {
           Todos esses fatores estão diretamente relacionados ao conceito de Saúde Única, que reconhece a importância do equilíbrio entre a saúde humana, animal e ambiental para que sejam estabelecidas políticas públicas adequadas de prevenção e controle de enfermidades.
           </p>
         </div>
+      </section>
+
+      <section className={styles.animal_helth_avaliation}> 
+        <Image
+            src={animal_helth_avaliation}
+            alt="Lobos guarás resgatados já adultos"
+            quality={100}
+            style={{
+              width: "100vw",
+              height: "auto",
+            }}
+          />
       </section>
 
       <footer>Powered by 

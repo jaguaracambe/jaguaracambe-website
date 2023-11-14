@@ -66,6 +66,14 @@
   height: 100vh;
 }
 
+.animal_helth_avaliation {
+  width: 100vw;
+  position: relative;  /* -- */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 @media (max-width: 600px) {
   .home_content {
     top: 60%;
@@ -84,6 +92,6 @@
   .health_definition_content{
     width: 100vw;
     height: auto;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 40px 20px;
   }
 }
