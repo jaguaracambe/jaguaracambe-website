@@ -93,6 +93,64 @@ export default function Home() {
     }
   ];
 
+  const members = [
+    {
+      "image_background": "./img/membros/Ana Paula.jpeg",
+      "position": "Presidente",
+      "name": "Ana Paula N. Quadros"
+    },
+    {
+      "image_background": "./img/membros/George Magno.jpeg",
+      "position": "Secretário Geral",
+      "name": "George Magno Sousa"
+    },
+    {
+      "image_background": "./img/membros/Izabelle Thayná.jpeg",
+      "position": "Diretora de Pesquisa",
+      "name": "Izabelle Thayná Soares"
+    },
+    {
+      "image_background": "./img/membros/Ana Raquel.jpeg",
+      "position": "Relações Institucionais",
+      "name": "Ana Raquel Farias"
+    },
+    {
+      "image_background": "./img/membros/Bryam Amorim.jpeg",
+      "position": "Gestor de Projetos",
+      "name": "Bryam Amorim Santana"
+    },
+    {
+      "image_background": "./img/membros/Filipe Martins.jpeg",
+      "position": "Diretor de Educação Ambiental",
+      "name": "Filipe Martins Neves"
+    },
+    {
+      "image_background": "./img/membros/Ane Beatriz.jpeg",
+      "position": "Captação de Recurso",
+      "name": "Ane Beatriz E. Teixeira"
+    },
+    {
+      "image_background": "./img/membros/Jessica Cabral.jpeg",
+      "position": "Tesoureira",
+      "name": "Jessica Cabral Carvalho"
+    },
+    {
+      "image_background": "./img/membros/Marisa.jpeg",
+      "position": "Suplente Geral",
+      "name": "Marisa Vieira Carvalho"
+    },
+    {
+      "image_background": "./img/membros/Izadora.jpeg",
+      "position": "Comunicação e Marketing",
+      "name": "Izadora N. de Quadros"
+    },
+    {
+      "image_background": "./img/membros/Mateus Henrique.jpeg",
+      "position": "Desenvolvedor de Software",
+      "name": "Mateus Henrique"
+    }
+  ];
+
 
   return (
     <main className={styles.homepage_container}>
@@ -280,6 +338,7 @@ export default function Home() {
         <Image
           src={windowWidth > 600 ? support_jaguaracambé : support_jaguaracambé_mobile}
           className={styles.suport_background}
+          alt="Apoie a Jaguaracambé"
           style={{
             width: "100vw",
             height: "auto",
