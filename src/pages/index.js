@@ -3,6 +3,15 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Link from 'next/link';
 
+import species_background from "/public/home/species_background.jpg"
+
+import canids from "/public/home/species/canids.jpg"
+import felids from "/public/home/species/felids.jpg"
+import procyonids from "/public/home/species/procyonids.jpg"
+import mephitids from "/public/home/species/mephitids.jpg"
+import mustelid from "/public/home/species/mustelid.jpg"
+
+
 
 export default function Home() {
   
@@ -41,27 +50,27 @@ export default function Home() {
     {
       title: "CANÍDEOS",
       link: 'sidedela.',
-      banner: "/species/canids.png",
+      banner: canids,
     },
     {
       title: "FELÍDEOS",
       link:'',
-      banner: "/species/felids.png",
+      banner: felids,
     },
     {
       title: "PROCIONÍDEOS",
       link:'',
-      banner: "/species/procyonids.png",
+      banner: procyonids,
     },
     {
       title: "MEFITÍDEOS",
       link:'',
-      banner: "/species/mephitids.png",
+      banner: mephitids,
     },
     {
       title: "mustelídeos",
       link:'',
-      banner: "/species/mustelídeos.png",
+      banner: mustelid,
     },
   ];
 
@@ -72,7 +81,7 @@ export default function Home() {
       <section className={styles.home_intro_section}>
         <div className={styles.image_wrapper}>
           <Image
-            src={"/images/jaguaracambé.jpeg"}
+            src={"/home/jaguaracambé.jpeg"}
             alt="Description of Image"
             priority={true}
             width={1920}
@@ -198,14 +207,14 @@ export default function Home() {
 
       <section className={styles.species_container}>
 
-        <div className={styles.species_background_wrapper}>
           <Image
-            src={"/images/species_background.jpeg"}
+            src={species_background}
             alt="Description of Image"
-            fill={true}
+            style={{
+              width: "100vw",
+              height: "auto",
+            }}
           />
-        </div>
-      
         
         <div className={styles.species_content}>
           <h1>ESPÉCIES</h1>
@@ -230,14 +239,19 @@ export default function Home() {
         <div className={styles.species_cards_container}>
           {species.map((specie, index) => (
             <div key={index} className={styles.species_card}>
-              <Image
-                src={specie.banner}
-                alt={`${specie.title} Banner`}
-                fill={true}
-                className={styles.species_banner}
-              />
+              <div className={styles.species_banner_backgroung}>
+                <Image
+                  src={specie.banner}
+                  alt={`${specie.title} Banner`}
+                  className={styles.species_banner}
+                  width={"100%"}
+                  height={"auto"}
+                />
+              </div>
               <Link href={specie.link} className={styles.species_link}>
-                {specie.title}
+            
+                  <p>{specie.title}</p>
+                
               </Link>
             </div>
           ))}
