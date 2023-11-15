@@ -344,7 +344,6 @@
   margin-top: 26px;
 }
 
-
 .species_cards_container {
   width: 96vw;
   margin-top: 5rem; /* Adjust as needed for spacing */
@@ -380,7 +379,6 @@
    bottom: 0;
    width: 100%;
    text-align: center;
-
    transition: color 0.3s ease;
 }
 
@@ -516,6 +514,100 @@
     width: 100%;
     text-align: center;
   }
+
+
+
+
+
+  .species_content {
+    width: 96%;
+    margin-top: 4vh;
+    padding: 2vh 2vh;
+    border-radius: 1.2rem;
+    height: auto;
+    background-color: rgba(15, 33, 2, 0.80) ;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .species_content p {
+    margin-top: 14px;
+    width: 100%;
+  }
+  .species_content p:nth-child(2) {
+    display: none;
+  }
+
+  .species_cards_container {
+    width: 96vw;
+    margin-top: 1rem; /* Adjust as needed for spacing */
+    padding: 1rem 0.5rem; /* To ensure there is space below the cards */
+    background-color: rgba(15, 33, 2, 0.60);
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    border-radius: 1.2rem;
+  }
+
+  .species_banner_backgroung  {
+    width: 38vw;
+    height: 38vw;
+  }
+  .species_card {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    position: relative; /* For the absolute positioning of the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+  }
+
+
+  .species_banner {
+    border-radius: 20px; /* To ensure the image has rounded corners */
+    z-index: 3;
+  }
+
+  .species_link {
+    color: #FEECC0;
+    z-index: 2;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    transition: color 0.3s ease;
+    margin-top: 14px;
+  }
+
+
+  .species_link p {
+    border: 2px solid #FEECC0;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    color: #FEECC0;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Caesar Dressing;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+
+
+
+
+
 }
 
 @media (max-width: 340px) {

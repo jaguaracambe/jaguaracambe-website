@@ -4,14 +4,11 @@ import Header from "../components/Header";
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
-
 import jaguaracambe from "/public/home/jaguaracambé.jpeg"
-import jaguaracambe_mobile from "/public/home/jaguaracambé_mobile.jpg"
 
+import jaguaracambe_mobile from "/public/home/jaguaracambé_mobile.jpg"
 import species_background from "/public/home/species_background.jpg"
 import species_background_mobile from "/public/home/species_background_mobile.jpg"
-
-
 import canids from "/public/home/species/canids.jpg"
 import felids from "/public/home/species/felids.jpg"
 import procyonids from "/public/home/species/procyonids.jpg"
@@ -77,11 +74,6 @@ export default function Home() {
       banner: felids,
     },
     {
-      title: "PROCIONÍDEOS",
-      link:'',
-      banner: procyonids,
-    },
-    {
       title: "MEFITÍDEOS",
       link:'',
       banner: mephitids,
@@ -91,6 +83,11 @@ export default function Home() {
       link:'',
       banner: mustelid,
     },
+    {
+      title: "PROCIONÍDEOS",
+      link:'',
+      banner: procyonids,
+    }
   ];
 
 
@@ -281,7 +278,7 @@ export default function Home() {
         <Link href="/projects/environmental_education"> hi girl</Link>
       </section>
 
-      <footer>Powered by </footer>
+      <footer>© Copyright Jaguaracambé - Associação para Conservação da Biodiversidade</footer>
     </main>
   );
 }
