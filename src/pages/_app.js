@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Jaguaracambé</title>
+        <link rel="icon" href="/logo.png" type="image/x-icon" />
       </Head>
       <Component {...pageProps} />
     </>
