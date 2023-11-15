@@ -578,16 +578,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 42vh;
+  justify-content: flex-start;
+  height: auto;
   border-radius: 0.75rem;
   margin: 2rem 0rem;
   width: 36vh;
   flex-shrink: 0;
+  padding-top: 10px;
 }
 
 .imageWrapper {
-  border-radius: 50%;
+  margin-top: 10px;
   overflow: hidden;
   width: 200px; /* Largura do item, ajuste conforme necessário */
   height: 200px; /* Altura do item, ajuste conforme necessário */
@@ -598,12 +599,10 @@
 }
 
 .description {
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 0;
-  left: 0;
   color: #0F2102;
-  margin-top: 3rem;
+  padding-top: 20px;
 }
 
 .membersContainer h1 {
@@ -859,6 +858,22 @@
     width: 100%;
     height: 100%; 
   }
+
+
+  .memberItem {
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40vh;
+    border-radius: 0.75rem;
+    margin: 2rem 0rem;
+    width: 36vh;
+    flex-shrink: 0;
+  }
+
 
   .supportContainer {
     display: flex;
