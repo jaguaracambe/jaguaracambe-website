@@ -68,27 +68,27 @@ export default function Home() {
   const species = [
     {
       title: "CANÍDEOS",
-      link: 'sidedela.',
+      link: '/species/Canids',
       banner: canids,
     },
     {
       title: "FELÍDEOS",
-      link:'',
+      link:'/species/Felids',
       banner: felids,
     },
     {
       title: "MEFITÍDEOS",
-      link:'',
+      link:'/species/Mephitids',
       banner: mephitids,
     },
     {
       title: "mustelídeos",
-      link:'',
+      link:'/species/Mustelid',
       banner: mustelid,
     },
     {
       title: "PROCIONÍDEOS",
-      link:'',
+      link:'/species/Procyonids',
       banner: procyonids,
     }
   ];
