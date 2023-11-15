@@ -95,59 +95,82 @@ export default function Home() {
 
   const members = [
     {
-      "image_background": "./img/membros/Ana Paula.jpeg",
+      "image_background": "/members/Ana Paula.png",
       "position": "Presidente",
-      "name": "Ana Paula N. Quadros"
+      "name": "Ana Paula N. Quadros",
+      "border_color": "#0F2102"
     },
     {
-      "image_background": "./img/membros/George Magno.jpeg",
+      "image_background": "/members/George.png",
       "position": "Secretário Geral",
-      "name": "George Magno Sousa"
+      "name": "George Magno Sousa",
+      "border_color": "#EE6B0C"
     },
     {
-      "image_background": "./img/membros/Izabelle Thayná.jpeg",
+      "image_background": "/members/Izabelle.png",
       "position": "Diretora de Pesquisa",
-      "name": "Izabelle Thayná Soares"
+      "name": "Izabelle Thayná Soares",
+      "border_color": "#512200"
     },
     {
-      "image_background": "./img/membros/Ana Raquel.jpeg",
+      "image_background": "/members/Ana Raquel.png",
       "position": "Relações Institucionais",
-      "name": "Ana Raquel Farias"
+      "name": "Ana Raquel Farias",
+      "border_color": "#224A04"
     },
     {
-      "image_background": "./img/membros/Bryam Amorim.jpeg",
+      "image_background": "/members/Bryam.png",
       "position": "Gestor de Projetos",
-      "name": "Bryam Amorim Santana"
+      "name": "Bryam Amorim Santana",
+      "border_color": "#EE6B0C"
     },
     {
-      "image_background": "./img/membros/Filipe Martins.jpeg",
-      "position": "Diretor de Educação Ambiental",
-      "name": "Filipe Martins Neves"
+      "image_background": "/members/Filipe.png",
+      "position": "Diretor de Ed. Ambiental",
+      "name": "Filipe Martins Neves",
+      "border_color": "#512200"
     },
     {
-      "image_background": "./img/membros/Ane Beatriz.jpeg",
+      "image_background": "/members/Ane Beatriz.png",
       "position": "Captação de Recurso",
-      "name": "Ane Beatriz E. Teixeira"
+      "name": "Ane Beatriz E. Teixeira",
+      "border_color": "#224A04"
     },
     {
-      "image_background": "./img/membros/Jessica Cabral.jpeg",
+      "image_background": "/members/Jessica.png",
       "position": "Tesoureira",
-      "name": "Jessica Cabral Carvalho"
+      "name": "Jessica Cabral Carvalho",
+      "border_color": "#EE6B0C"
     },
     {
-      "image_background": "./img/membros/Marisa.jpeg",
+      "image_background": "/members/Marisa.png",
       "position": "Suplente Geral",
-      "name": "Marisa Vieira Carvalho"
+      "name": "Marisa Vieira Carvalho",
+      "border_color": "#512200"
     },
     {
-      "image_background": "./img/membros/Izadora.jpeg",
+      "image_background": "/members/Wericles.png",
       "position": "Comunicação e Marketing",
-      "name": "Izadora N. de Quadros"
+      "name": "WERICLES RIBEIRO",
+      "border_color": "#EE6B0C"
     },
     {
-      "image_background": "./img/membros/Mateus Henrique.jpeg",
+      "image_background": "/members/Luiz.png",
+      "position": "Comunicação e Marketing",
+      "name": "LUIZ FERNANDO",
+      "border_color": "#EE6B0C"
+    },
+    {
+      "image_background": "/members/Izadora.png",
+      "position": "Comunicação e Marketing",
+      "name": "Izadora N. de Quadros",
+      "border_color": "#224A04"
+    },
+    {
+      "image_background": "/members/Mateus Henrique.png",
       "position": "Desenvolvedor de Software",
-      "name": "Mateus Henrique"
+      "name": "Mateus Henrique",
+      "border_color": "#EE6B0C"
     }
   ];
 
@@ -281,16 +304,17 @@ export default function Home() {
       </section>
 
       <section id="species" className={styles.species_container}>
+        <Image
+          src={
+            windowWidth > 600 ? species_background : species_background_mobile
+          }
+          alt="Description of Image"
+          style={{
+            width: "100vw",
+            height: "auto",
+          }}
+        />
 
-          <Image
-            src={windowWidth > 600 ? species_background : species_background_mobile}
-            alt="Description of Image"
-            style={{
-              width: "100vw",
-              height: "auto",
-            }}
-          />
-        
         <div className={styles.species_content}>
           <h1>ESPÉCIES</h1>
           <p>
@@ -309,8 +333,6 @@ export default function Home() {
           </p>
         </div>
 
-        
-
         <div className={styles.species_cards_container}>
           {species.map((specie, index) => (
             <div key={index} className={styles.species_card}>
@@ -324,19 +346,43 @@ export default function Home() {
                 />
               </div>
               <Link href={specie.link} className={styles.species_link}>
-            
-                  <p>{specie.title}</p>
-                
+                <p>{specie.title}</p>
               </Link>
             </div>
           ))}
         </div>
+      </section>
 
+      <section className={styles.membersContainer}>
+        <h1>MEMBROS</h1>
+        <ul className={styles.memberList}>
+          {members.map((member, index) => (
+            <li key={index} className={styles.memberItem} style={{border: `2px solid ${member.border_color}`}}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={member.image_background} 
+                  alt={member.name} 
+                  width={237}  
+                  height={237} 
+                  className={styles.memberImage} 
+                />
+              </div>
+              <div className={styles.description}>
+                <h4>{member.position}</h4>
+                <h3>{member.name}</h3>
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section id="support" className={styles.supportContainer}>
         <Image
-          src={windowWidth > 600 ? support_jaguaracambé : support_jaguaracambé_mobile}
+          src={
+            windowWidth > 600
+              ? support_jaguaracambé
+              : support_jaguaracambé_mobile
+          }
           className={styles.suport_background}
           alt="Apoie a Jaguaracambé"
           style={{
@@ -353,10 +399,7 @@ export default function Home() {
         </div>
         <div className={styles.supportBody}>
           <div className={styles.qrCodePlaceholder}>
-            <img
-              src="/suport/qrcode.jpeg"
-              alt="Link do intagram da Pequi"
-            />
+            <img src="/suport/qrcode.jpeg" alt="Link do intagram da Pequi" />
           </div>
           <h3>PIX</h3>
           <div className={styles.pixEmail}>
@@ -367,7 +410,10 @@ export default function Home() {
 
         <div className={styles.contactInfo}>
           <h2>CONHEÇA</h2>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQsxd2s2MCrYGraOecGpehMmnmwz5VGrDIl3xKxhBvLvq_0w/viewform" className={styles.productsButton}>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQsxd2s2MCrYGraOecGpehMmnmwz5VGrDIl3xKxhBvLvq_0w/viewform"
+            className={styles.productsButton}
+          >
             <h3>NOSSOS PRODUTOS</h3>
           </a>
           <p>Acesse nossas redes</p>
@@ -404,7 +450,9 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>© Copyright Jaguaracambé - Associação para Conservação da Biodiversidade</footer>
+      <footer>
+        © Copyright Jaguaracambé - Associação para Conservação da Biodiversidade
+      </footer>
     </main>
   );
 }
