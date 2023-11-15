@@ -15,6 +15,9 @@ import procyonids from "/public/home/species/procyonids.jpg"
 import mephitids from "/public/home/species/mephitids.jpg"
 import mustelid from "/public/home/species/mustelid.jpg"
 
+import support_jaguaracambé from '/public/suport/suport_jaguaracambé.jpg'
+import support_jaguaracambé_mobile from '/public/suport/suport_jaguaracambé_mobile.jpg'
+
 
 
 export default function Home() {
@@ -273,9 +276,73 @@ export default function Home() {
 
       </section>
 
-      <section className={styles.members_container}>
-        <h1>Membros</h1>
-        <Link href="/projects/environmental_education"> hi girl</Link>
+      <section className={styles.supportContainer}>
+        <Image
+          src={windowWidth > 600 ? support_jaguaracambé : support_jaguaracambé_mobile}
+          className={styles.suport_background}
+          style={{
+            width: "100vw",
+            height: "auto",
+          }}
+        />
+        <div className={styles.supportHeader}>
+          <h1>APOIE A JAGUARACAMBÉ!</h1>
+          <p>
+            Desenvolver pesquisas e projetos que tenham como objetivo promover a
+            conservação da biodiversidade.
+          </p>
+        </div>
+        <div className={styles.supportBody}>
+          <div className={styles.qrCodePlaceholder}>
+            <img
+              src="/suport/qrcode.jpeg"
+              alt="Link do intagram da Pequi"
+            />
+          </div>
+          <h3>PIX</h3>
+          <div className={styles.pixEmail}>
+            <img src="/suport/email.svg" alt="Icone de email" />
+            <p>Pix: financeiro@jaguaracambe.org.br</p>
+          </div>
+        </div>
+
+        <div className={styles.contactInfo}>
+          <h2>CONHEÇA</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQsxd2s2MCrYGraOecGpehMmnmwz5VGrDIl3xKxhBvLvq_0w/viewform" className={styles.productsButton}>
+            <h3>NOSSOS PRODUTOS</h3>
+          </a>
+          <p>Acesse nossas redes</p>
+          <div className={styles.socialMedia}>
+            <a href="https://www.linkedin.com/company/jaguaracambe/mycompany/">
+              <img
+                src="/suport/linkedin.svg"
+                alt="link do linkedin da Jaguaracamé"
+              />
+            </a>
+            <a href="https://www.instagram.com/ongjaguaracambe/">
+              <img
+                src="/suport/instagram.svg"
+                alt="link do intagram da Jaguaracambé link"
+              />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100090318610135&locale=hi_IN&paipv=0&eav=AfZVgdwZeN8Hf86JasIvQ3tQ09bePS50C47O_64AJBzNE0WpjbXxRqJFx8qg8iI20N0">
+              <img
+                src="/suport/facebook.svg"
+                alt="link do facebook da Jaguaracambé"
+              />
+            </a>
+          </div>
+          <p>Acesse também as redes do projeto Sou eu, Pequi!</p>
+          <div className={styles.pequi_media}>
+            <a href="https://www.instagram.com/soueupequi/">
+              <img
+                src="/suport/instagram_pequi.svg"
+                alt="Link do intagram da Pequi"
+              />
+            </a>
+            <p>Sou Eu, Pequi!</p>
+          </div>
+        </div>
       </section>
 
       <footer>© Copyright Jaguaracambé - Associação para Conservação da Biodiversidade</footer>
