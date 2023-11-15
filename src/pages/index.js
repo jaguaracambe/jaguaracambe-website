@@ -2,8 +2,15 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+
+
+import jaguaracambe from "/public/home/jaguaracambé.jpeg"
+import jaguaracambe_mobile from "/public/home/jaguaracambé_mobile.jpg"
 
 import species_background from "/public/home/species_background.jpg"
+import species_background_mobile from "/public/home/species_background_mobile.jpg"
+
 
 import canids from "/public/home/species/canids.jpg"
 import felids from "/public/home/species/felids.jpg"
@@ -14,6 +21,18 @@ import mustelid from "/public/home/species/mustelid.jpg"
 
 
 export default function Home() {
+
+  const [windowWidth, setWindowWidth] = useState(null);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    
+    window.addEventListener('resize', handleResize);
+    
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   const projects = [
     {
@@ -81,11 +100,9 @@ export default function Home() {
       <section className={styles.home_intro_section}>
         <div className={styles.image_wrapper}>
           <Image
-            src={"/home/jaguaracambé.jpeg"}
+            src={window > 600 ? jaguaracambe : jaguaracambe_mobile}
             alt="Description of Image"
             priority={true}
-            width={1920}
-            height={1280}
           />
         </div>
         <div className={styles.home_content}>
@@ -208,7 +225,7 @@ export default function Home() {
       <section id="species" className={styles.species_container}>
 
           <Image
-            src={species_background}
+            src={window > 600 ? species_background : species_background_mobile}
             alt="Description of Image"
             style={{
               width: "100vw",
@@ -222,7 +239,7 @@ export default function Home() {
             Nossa ONG tem esse nome em homenagem ao cachorro do mato vinagre,
             também conhecido como jaguaracambé. Essa é uma espécie ameaçada de
             extinção e por ser um animal de difícil detecção, ainda temos poucas
-            informações sobre sua ecologia. É um compromisso da Jaguaracambé nao
+            informações sobre sua ecologia. É um compromisso da Jaguaracambé não
             apenas preservar o cachorro do mato vinagre mas também expandir
             entendimento que temos a seu respeito.
           </p>
