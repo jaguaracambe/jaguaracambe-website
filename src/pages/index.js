@@ -276,7 +276,7 @@ export default function Home() {
 
       </section>
 
-      <section className={styles.supportContainer}>
+      <section id="#support" className={styles.supportContainer}>
         <Image
           src={windowWidth > 600 ? support_jaguaracambé : support_jaguaracambé_mobile}
           className={styles.suport_background}
