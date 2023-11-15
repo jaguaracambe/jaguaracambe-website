@@ -205,7 +205,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.species_container}>
+      <section id="species" className={styles.species_container}>
 
           <Image
             src={species_background}

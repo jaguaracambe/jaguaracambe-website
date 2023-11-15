@@ -35,6 +35,11 @@
   border: 1px solid #224A04;
 }
 
+.link:hover {
+  background-color: #224A04;
+  color: #FCFFF0;
+}
+
 .logo img {
   width: 100%;  /* Adjust as needed */
   height: auto;

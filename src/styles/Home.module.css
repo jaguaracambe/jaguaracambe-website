@@ -265,24 +265,51 @@
 .projectCard:nth-child(1) .learnMoreButton {
   border: 3px solid #FEECC0;
   background-color: #224A04;
+  transition: color 0.3s ease;
 }
 
 .projectCard:nth-child(2) .learnMoreButton {
   background: #EE6B0C;
   border: 3px solid #512200;
   color: #512200;
+  transition: color 0.3s ease;
 }
 
 .projectCard:nth-child(3) .learnMoreButton {
   border: 3px solid #FEECC0;
   background: #512200;
   color: #FEECC0;
+  transition: color 0.3s ease;
 }
 
 .projectCard:nth-child(4) .learnMoreButton {
   border: 3px solid #224A04;
   background: #FFF;  
   color: #224A04;
+  transition: color 0.3s ease;
+}
+
+.projectCard:nth-child(1) .learnMoreButton:hover {
+  color:  #224A04 ;
+  background-color: #FEECC0;
+}
+
+.projectCard:nth-child(2) .learnMoreButton:hover {
+  background: #512200;
+  border: 3px solid #EE6B0C;
+  color: #EE6B0C;
+}
+
+.projectCard:nth-child(3) .learnMoreButton:hover {
+  border: 3px solid #512200;
+  background: #FEECC0;
+  color: #512200;
+}
+
+.projectCard:nth-child(4) .learnMoreButton:hover {
+  border: 3px solid #FFF;
+  background: #224A04;  
+  color: #FFF;
 }
 
 .species_container {
@@ -354,22 +381,27 @@
    position: absolute;
    bottom: 0;
    width: 100%;
-   border: 2px solid #FEECC0;
    text-align: center;
-   padding: 0.5rem;
-   border-radius: 2rem;
+
    transition: color 0.3s ease;
 }
 
 .species_link p:hover {
-  color: #0F2102;
+  color: #ffffff;
+  border-color: #ffffff;
+
 }
 
 .species_card Link:hover {
   color: #0F2102;
+  border: 2px solid #FEECC0;
+
 }
 
 .species_link p {
+  border: 2px solid #FEECC0;
+  padding: 0.5rem;
+  border-radius: 2rem;
   color: #FEECC0;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -378,6 +410,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
+  width: 100%;
+  height: 100%;
 }
 
 
