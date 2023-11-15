@@ -100,7 +100,7 @@ export default function Home() {
       <section className={styles.home_intro_section}>
         <div className={styles.image_wrapper}>
           <Image
-            src={window > 600 ? jaguaracambe : jaguaracambe_mobile}
+            src={windowWidth > 600 ? jaguaracambe : jaguaracambe_mobile}
             alt="Description of Image"
             priority={true}
           />
@@ -225,7 +225,7 @@ export default function Home() {
       <section id="species" className={styles.species_container}>
 
           <Image
-            src={window > 600 ? species_background : species_background_mobile}
+            src={windowWidth > 600 ? species_background : species_background_mobile}
             alt="Description of Image"
             style={{
               width: "100vw",
