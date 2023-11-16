@@ -150,13 +150,13 @@ export default function Home() {
     },
     {
       "image_background": "/members/Wericles.png",
-      "position": "Comunicação e Marketing",
+      "position": "Monitoramento",
       "name": "WERICLES RIBEIRO",
       "border_color": "#EE6B0C"
     },
     {
       "image_background": "/members/Luiz.png",
-      "position": "Comunicação e Marketing",
+      "position": "Comportamentalista",
       "name": "LUIZ FERNANDO",
       "border_color": "#EE6B0C"
     },
