@@ -162,8 +162,8 @@ export default function Pequi() {
           src={pequi_in_nature}
           alt="Pequi em um recinto"
           style={{
-            width: "100vw",
-            height: "auto",
+            width: "auto",
+            height: "100vh",
           }}
         />
         <div className={styles.pequi_nature_content}>

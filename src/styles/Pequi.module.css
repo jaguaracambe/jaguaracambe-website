@@ -96,7 +96,7 @@
 
 .monitoring_section {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   background-color: #512200;
   justify-content: space-between;
@@ -105,7 +105,7 @@
 .monitoring_section_content {
     padding: 16vh 10vh 0vh 10vh;
     width: 80vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .monitoring_section_content p{
