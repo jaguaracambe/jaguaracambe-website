@@ -396,7 +396,7 @@ export default function Home() {
         <div className={styles.supportHeader}>
           <h1>APOIE A JAGUARACAMBÉ!</h1>
           <p>
-            Desenvolver pesquisas e projetos que tenham como objetivo promover a
+            Ajude a desenvolver pesquisas e projetos que tenham como objetivo promover a
             conservação da biodiversidade.
           </p>
         </div>
