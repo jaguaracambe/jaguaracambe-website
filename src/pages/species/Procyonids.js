@@ -38,7 +38,7 @@ export default function Procyonids() {
         />
 
         <div className={styles.home_content}>
-          <p>Canídeos</p>
+          <p>Procionídeos</p>
           <h1>EM BREVE!</h1>
           <h2>PÁGINA EM CONSTRUÇÃO</h2>
         </div>

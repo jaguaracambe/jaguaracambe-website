@@ -38,7 +38,7 @@ export default function Felids() {
         />
 
         <div className={styles.home_content}>
-          <p>Canídeos</p>
+          <p>Felídeos</p>
           <h1>EM BREVE!</h1>
           <h2>PÁGINA EM CONSTRUÇÃO</h2>
           
