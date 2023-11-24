@@ -50,7 +50,7 @@
 }
 
 .pequi_definition_content {
-    padding: 16vh 5vh 0vh 10vh;
+    padding: 12vh 5vh 0vh 10vh;
     width: 60vw;
     height: 100vh;
 }
@@ -102,10 +102,9 @@
   justify-content: space-between;
 }
 
-.monitoring_section_content {
-    padding: 16vh 10vh 0vh 10vh;
-    width: 80vw;
-    min-height: 100vh;
+.monitoring_section_content { 
+    padding: 12vh 4vh 0vh 4vh;
+    min-height: 110vh;
 }
 
 .monitoring_section_content p{
@@ -123,9 +122,9 @@
 
 .pequi_nature_content{
   position: absolute;
-  top: 14%;
-  left: 10%;
-  width: 42%;
+  top: 12%;
+  left: 8%;
+  width: 48%;
   background-color: #FCFFF0;
   height: auto;
   padding: 10px 30px 30px 30px;

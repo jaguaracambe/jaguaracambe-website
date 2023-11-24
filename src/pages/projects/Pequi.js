@@ -137,7 +137,7 @@ export default function Pequi() {
           atl="Lobo guará Pequi com o seu colar de monitoramento"
           style={{
             width: windowWidth > 650 ? "auto" : "100vw",
-            height: windowWidth > 650 ? "100vh" : "auto",
+            height: windowWidth > 650 ? "110vh" : "auto",
           }}
         />
 
