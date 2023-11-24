@@ -45,13 +45,14 @@
   height: 100vh; 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #0F2102;
 }
 
 
 .monitoring_definition_content{
-  padding: 14vh 8vw 0vh 0vh;
+  width: 100%;
+  padding: 12vh 0vw 0vh 8vh;
   width: 60vw;
   height: 100vh;
 }
