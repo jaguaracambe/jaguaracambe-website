@@ -95,9 +95,10 @@
 
 
 .health_informative_content{
-  padding: 14vh 4vw 0vh 14vh;
+  padding: 12vh 4vh 0vh 6vh;
   width: 60vw;
   height: 100vh;
+  width: 100%;
 }
 
 
