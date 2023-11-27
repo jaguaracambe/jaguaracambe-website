@@ -117,7 +117,13 @@ export default function EnvironmentalEducation() {
 
       <section className={styles.supportContainer}>
         <Image
-          src={windowWidth > 600 ? suport_education_background : suport_education_background_mobile}
+          src={
+            windowWidth > 600
+              ? suport_education_background
+              : suport_education_background_mobile
+          }
+          className={styles.suport_background}
+          alt="Apoie a Jaguaracambé"
           style={{
             width: "100vw",
             height: "auto",
@@ -126,16 +132,13 @@ export default function EnvironmentalEducation() {
         <div className={styles.supportHeader}>
           <h1>APOIE A JAGUARACAMBÉ!</h1>
           <p>
-            Desenvolver pesquisas e projetos que tenham como objetivo promover a
+            Ajude a desenvolver pesquisas e projetos que tenham como objetivo promover a
             conservação da biodiversidade.
           </p>
         </div>
         <div className={styles.supportBody}>
           <div className={styles.qrCodePlaceholder}>
-            <img
-              src="/suport/qrcode.jpeg"
-              alt="Link do intagram da Pequi"
-            />
+            <img src="/suport/qrcode.jpeg" alt="Link do intagram da Pequi" />
           </div>
           <h3>PIX</h3>
           <div className={styles.pixEmail}>
@@ -143,35 +146,45 @@ export default function EnvironmentalEducation() {
             <p>Pix: financeiro@jaguaracambe.org.br</p>
           </div>
         </div>
+
         <div className={styles.contactInfo}>
           <h2>CONHEÇA</h2>
-          <a href="your-linkedin-url" className={styles.productsButton}>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQsxd2s2MCrYGraOecGpehMmnmwz5VGrDIl3xKxhBvLvq_0w/viewform"
+            className={styles.productsButton}
+          >
             <h3>NOSSOS PRODUTOS</h3>
           </a>
           <p>Acesse nossas redes</p>
           <div className={styles.socialMedia}>
-            <a href="your-linkedin-url">
+            <a href="https://www.linkedin.com/company/jaguaracambe/mycompany/">
               <img
                 src="/suport/linkedin.svg"
                 alt="link do linkedin da Jaguaracamé"
+                width={50}
+                height={50}
               />
             </a>
-            <a href="your-instagram-url">
+            <a href="https://www.instagram.com/ongjaguaracambe/">
               <img
                 src="/suport/instagram.svg"
                 alt="link do intagram da Jaguaracambé link"
+                width={50}
+                height={50}
               />
             </a>
-            <a href="your-facebook-url">
+            <a href="https://www.facebook.com/profile.php?id=100090318610135&locale=hi_IN&paipv=0&eav=AfZVgdwZeN8Hf86JasIvQ3tQ09bePS50C47O_64AJBzNE0WpjbXxRqJFx8qg8iI20N0">
               <img
                 src="/suport/facebook.svg"
                 alt="link do facebook da Jaguaracambé"
+                width={50}
+                height={50}
               />
             </a>
           </div>
           <p>Acesse também as redes do projeto Sou eu, Pequi!</p>
           <div className={styles.pequi_media}>
-            <a href="your-instagram-url">
+            <a href="https://www.instagram.com/soueupequi/">
               <img
                 src="/suport/instagram_pequi.svg"
                 alt="Link do intagram da Pequi"
