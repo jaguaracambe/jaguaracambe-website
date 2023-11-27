@@ -398,139 +398,6 @@
   height: 100%;
 }
 
-.supportContainer {
-  position: relative;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
-}
-
-.supportHeader {
-  position: absolute;
-  top: 20%;
-  left: 6%;
-}
-
-
-.supportHeader p {
-  width: 60%;
-}
-
-.supportBody {
-  position: absolute;
-  bottom: 20%;
-  left: 10%;
-  width: 36%;
-  display: flex;
-  flex-direction: column;
-  height: 50vh;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.qrCodePlaceholder {
-  /* Replace the dimensions as needed based on your actual QR code size */
-  width: 200px;
-  height: 200px;
-  background-color: #ffffff; /* Placeholder color */
-  border-radius: 1.2rem;
-  position: relative;
-}
-.qrCodePlaceholder img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.qrCodePlaceholder {
-  padding-bottom: 30vh;
-}
-
-.pixEmail {
-  display: flex;
-  justify-content: space-between;
-}
-.pixEmail img {
-  height: 1.5rem;
-  padding-right: 10px;
-}
-
-.contactInfo {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contactInfo h2,
-.contactInfo h3,
-.supportBody h3{
-  color: #FCFFF0;
-  font-family: Caesar Dressing;
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 5.775rem */
-  padding: 0;
-  margin: 0;
-}
-.contactInfo p {
-  color: #fff;
-  font-size: 1rem;
-  padding-top: 20px;
-}
-
-.contactInfo h3,
-.supportBody h3 {
-  font-size: 2.5rem;
-}
-
-.productsButton {
-  background: #EE6B0C; /* Adjust color as needed */
-  border: none;
-  border-radius: 5rem;
-  padding: 0.5em 2em;
-  color: #fff;
-  font-weight: bold;
-  margin: 0.5em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin: 20px 0px;
-}
-
-.discoverButton:hover, .productsButton:hover {
-  background-color: #e59428; /* Darker shade for hover state */
-}
-
-.socialMedia {
-  display: flex;
-  justify-content: center;
-  gap: 1rem; /* Space between links */
-  margin-top: 1rem;
-}
-
-.socialMedia a {
-  color: #fff; /* Adjust as needed */
-  text-decoration: none;
-}
-.pequi_media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-.pequi_media p{
-  padding-top: 0px;
-}
-
 /* components/MembersSection.module.css */
 
 
@@ -639,6 +506,150 @@
 .description {
   padding-bottom: 10px;
 }
+
+.supportContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.supportHeader {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  margin: 1rem 1rem;
+}
+
+.supportHeader h1 {
+  padding-top: 4vh;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.supportHeader p {
+  width: 60%;
+  margin: 1rem;
+}
+
+.supportBody {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.qrCodePlaceholder {
+  /* Replace the dimensions as needed based on your actual QR code size */
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff; /* Placeholder color */
+  border-radius: 1.2rem;
+  position: relative;
+}
+.qrCodePlaceholder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qrCodePlaceholder {
+  padding-bottom: 30vh;
+}
+
+.pixEmail {
+  display: flex;
+  justify-content: space-between;
+}
+.pixEmail img {
+  height: 1.5rem;
+  padding-right: 10px;
+}
+
+.contactInfo {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo h2,
+.contactInfo h3,
+.supportBody h3{
+  color: #FCFFF0;
+  font-family: Caesar Dressing;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 5.775rem */
+  padding: 0;
+  margin: 0;
+}
+.contactInfo p {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.contactInfo h3,
+.supportBody h3 {
+  font-size: 2.5rem;
+}
+
+.productsButton {
+  background: #EE6B0C; /* Adjust color as needed */
+  border: none;
+  border-radius: 5rem;
+  padding: 0.5em 2em;
+  color: #fff;
+  font-weight: bold;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 8px 0px;
+}
+
+.discoverButton:hover, .productsButton:hover {
+  background-color: #e59428; /* Darker shade for hover state */
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem; /* Space between links */
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.socialMedia a {
+  color: #fff; /* Adjust as needed */
+  text-decoration: none;
+}
+.pequi_media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.pequi_media p{
+  padding-top: 0px;
+}
+
+
 
 
 /* For Webkit (Chrome, Edge, Safari) */
@@ -874,15 +885,26 @@
 
 
   .supportContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;  
+    height: 100%;
   }
 
-  .supportContainer .suport_background{
+   .suport_background{
     position: absolute;
     top: 0;
     left: 0;
+    height: auto;
+    object-fit: contain; /* For contain */
+    /* or */
+    object-fit: cover; /* For cover */
+  }
+  img.suport_background {
+    object-fit: contain; /* For contain */
+    /* or */
+    object-fit: cover; /* For cover */
   }
 
   .supportHeader,
@@ -894,10 +916,7 @@
     padding: 0;
   }
 
-  .supportHeader h1 {
-    font-size: 3rem;
-    margin: 0px;
-  }
+  
   .supportContainer p{
     font-size: 1.0rem
   }
@@ -948,6 +967,7 @@
     align-items: center;
     top: 0;
     left: 0;
+    margin-top: 1.2rem;
   }
   
   .contactInfo h2,
@@ -981,7 +1001,7 @@
 
   .socialMedia {
     width: 100%;
-    height: 10vh;
+    margin-top: 0.6rem;
     position: relative;
   }
   .pequi_media p{

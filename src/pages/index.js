@@ -425,18 +425,24 @@ export default function Home() {
               <img
                 src="/suport/linkedin.svg"
                 alt="link do linkedin da Jaguaracamé"
+                width={50}
+                height={50}
               />
             </a>
             <a href="https://www.instagram.com/ongjaguaracambe/">
               <img
                 src="/suport/instagram.svg"
                 alt="link do intagram da Jaguaracambé link"
+                width={50}
+                height={50}
               />
             </a>
             <a href="https://www.facebook.com/profile.php?id=100090318610135&locale=hi_IN&paipv=0&eav=AfZVgdwZeN8Hf86JasIvQ3tQ09bePS50C47O_64AJBzNE0WpjbXxRqJFx8qg8iI20N0">
               <img
                 src="/suport/facebook.svg"
                 alt="link do facebook da Jaguaracambé"
+                width={50}
+                height={50}
               />
             </a>
           </div>
