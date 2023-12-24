@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
+import LazyYoutube from "../components/LazyYoutube";
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import jaguaracambe from "/public/home/jaguaracambé.jpeg"
 
@@ -23,6 +24,9 @@ import support_jaguaracambé_mobile from '/public/suport/suport_jaguaracambé_mo
 export default function Home() {
 
   const [windowWidth, setWindowWidth] = useState(null);
+
+  const [load, setLoad] = useState(false);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -203,8 +207,7 @@ export default function Home() {
           Única.
         </p>
         <div className={styles.info_cards}>
-
-        <div className={styles.info_card}>
+          <div className={styles.info_card}>
             <h2>NOSSA MISSÃO</h2>
             <p>
               Desenvolver pesquisas e projetos que tenham como objetivo promover
@@ -222,7 +225,6 @@ export default function Home() {
               />
             </svg>
           </div>
-
 
           <div className={styles.info_card}>
             <h2>VISÃO</h2>
@@ -261,8 +263,15 @@ export default function Home() {
               />
             </svg>
           </div>
-
         </div>
+      </section>
+
+      <section className={styles.institurional_video_section}>
+        <h1>Vídeo Institucional</h1>
+        <div>
+        <LazyYoutube lassName={styles.institurional_video}/> 
+        </div>
+        
       </section>
 
       <section id="projects" className={styles.projects_container}>
@@ -360,14 +369,18 @@ export default function Home() {
         <h1>MEMBROS</h1>
         <ul className={styles.memberList}>
           {members.map((member, index) => (
-            <li key={index} className={styles.memberItem} style={{border: `2px solid ${member.border_color}`}}>
+            <li
+              key={index}
+              className={styles.memberItem}
+              style={{ border: `2px solid ${member.border_color}` }}
+            >
               <div className={styles.imageWrapper}>
                 <Image
-                  src={member.image_background} 
-                  alt={member.name} 
-                  width={237}  
-                  height={237} 
-                  className={styles.memberImage} 
+                  src={member.image_background}
+                  alt={member.name}
+                  width={237}
+                  height={237}
+                  className={styles.memberImage}
                 />
               </div>
               <div className={styles.description}>
@@ -396,8 +409,8 @@ export default function Home() {
         <div className={styles.supportHeader}>
           <h1>APOIE A JAGUARACAMBÉ!</h1>
           <p>
-            Ajude a desenvolver pesquisas e projetos que tenham como objetivo promover a
-            conservação da biodiversidade.
+            Ajude a desenvolver pesquisas e projetos que tenham como objetivo
+            promover a conservação da biodiversidade.
           </p>
         </div>
         <div className={styles.supportBody}>
