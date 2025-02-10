@@ -25,6 +25,8 @@ const Header = () => {
         </button>
       </div>
       <nav className={styles.nav}>
+        
+        <Link href="/#volunteer_section" className={styles.link} onClick={toggleMenu}>SEJA UM VOLUNTÁRIO</Link>
         <Link href="/#about_section" className={styles.link} onClick={toggleMenu}>SOBRE A ONG</Link>
         <Link href="/#projects" className={styles.link} onClick={toggleMenu}>PROJETOS</Link>
         <Link href="/#species" className={styles.link} onClick={toggleMenu}>ESPÉCIES</Link>
