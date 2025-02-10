@@ -1,0 +1,529 @@
+.homepage_container {
+  min-height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0 0;
+  position: relative;
+  top:0;
+  left: 0;
+  margin: 0;
+}
+
+.home_intro_section {
+  margin: 0;
+  padding:0;
+  width: 100vw;
+  position: relative;  /* -- */
+  z-index: 3;
+}
+
+.image_wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image_wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(3deg, #000 -50.65%, rgba(0, 0, 0, 0.00) 95.92%);
+  z-index: 1;
+}
+
+.home_content {
+  position: absolute;  /* Absolute positioning relative to .home_intro_Section */
+  left: 10%;  /* Adjust this value to move the text horizontally */
+  top: 50%;   /* Adjust this value to move the text vertically */
+  color: #FCFFF0; 
+  z-index: 2;
+  text-align: center;
+}
+
+.education_definition_section h1, 
+.education_definition_section p  {
+  color: #0F2102;
+  width: 100%;
+  margin-top: 24px;
+  text-shadow: none;
+
+}
+
+.education_definition_section {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FCFFF0;
+}
+
+
+.educantion_definition_content{
+  padding: 14vh 4vh 0vh 0vh;
+  width: 64vw;
+  height: 100vh;
+}
+
+.education_informative_section {
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.informative_content{
+  position: absolute;
+  top: 14%;
+  left: 6%;
+  width: 58%;
+  background-color: #FCFFF0;
+  height: auto;
+  padding: 10px 30px 30px 30px;
+  border-radius: 1.2rem;
+  margin: 0;
+}
+
+.informative_content p {
+  color: #0F2102;
+  padding-top: 24px;
+  text-shadow: none;
+
+}
+
+.supportContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  margin-top: -5px;
+}
+
+.supportHeader {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+}
+
+
+.supportHeader p {
+  width: 60%;
+}
+
+.supportBody {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.qrCodePlaceholder {
+  /* Replace the dimensions as needed based on your actual QR code size */
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff; /* Placeholder color */
+  border-radius: 1.2rem;
+  position: relative;
+}
+.qrCodePlaceholder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qrCodePlaceholder {
+  padding-bottom: 30vh;
+}
+
+.pixEmail {
+  display: flex;
+  justify-content: space-between;
+}
+.pixEmail img {
+  height: 1.5rem;
+  padding-right: 10px;
+}
+
+.contactInfo {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo h2,
+.contactInfo h3,
+.supportBody h3{
+  color: #FCFFF0;
+  font-family: Caesar Dressing;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 5.775rem */
+  padding: 0;
+  margin: 0;
+}
+.contactInfo p {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.contactInfo h3,
+.supportBody h3 {
+  font-size: 2.5rem;
+}
+
+.productsButton {
+  background: #EE6B0C; /* Adjust color as needed */
+  border: none;
+  border-radius: 5rem;
+  padding: 0.5em 2em;
+  color: #fff;
+  font-weight: bold;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px 0px;
+}
+
+.discoverButton:hover, .productsButton:hover {
+  background-color: #e59428; /* Darker shade for hover state */
+}
+
+
+
+.supportContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.supportHeader {
+  position: absolute;
+  top: 12%;
+  left: 6%;
+  margin: 1rem 1rem;
+}
+
+.supportHeader h1 {
+  padding-top: 4vh;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.supportHeader p {
+  width: 60%;
+  margin: 1rem;
+}
+
+.supportBody {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.qrCodePlaceholder {
+  /* Replace the dimensions as needed based on your actual QR code size */
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff; /* Placeholder color */
+  border-radius: 1.2rem;
+  position: relative;
+}
+.qrCodePlaceholder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qrCodePlaceholder {
+  padding-bottom: 30vh;
+}
+
+.pixEmail {
+  display: flex;
+  justify-content: space-between;
+}
+.pixEmail img {
+  height: 1.5rem;
+  padding-right: 10px;
+}
+
+.contactInfo {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo h2,
+.contactInfo h3,
+.supportBody h3{
+  color: #FCFFF0;
+  font-family: Caesar Dressing;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 5.775rem */
+  padding: 0;
+  margin: 0;
+}
+.contactInfo p {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.contactInfo h3,
+.supportBody h3 {
+  font-size: 2.5rem;
+}
+
+.productsButton {
+  background: #EE6B0C; /* Adjust color as needed */
+  border: none;
+  border-radius: 5rem;
+  padding: 0.5em 2em;
+  color: #fff;
+  font-weight: bold;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 8px 0px;
+}
+
+.discoverButton:hover, .productsButton:hover {
+  background-color: #e59428; /* Darker shade for hover state */
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem; /* Space between links */
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.socialMedia a {
+  color: #fff; /* Adjust as needed */
+  text-decoration: none;
+}
+.pequi_media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.pequi_media p{
+  padding-top: 0px;
+}
+
+.homepage_container footer {
+  margin-top: -5px;
+}
+
+@media (max-width: 600px) {
+
+  .home_content {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+  }
+
+  .image_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: none;
+    z-index: 1;
+  }
+
+
+  .education_definition_section {
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .educantion_definition_content{
+    width: 100vw;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .informative_content{
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .supportContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 100%;
+  }
+
+   .suport_background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    object-fit: contain; /* For contain */
+    /* or */
+    object-fit: cover; /* For cover */
+  }
+  img.suport_background {
+    object-fit: contain; /* For contain */
+    /* or */
+    object-fit: cover; /* For cover */
+  }
+
+  .supportHeader,
+  .supportBody,
+  .contactInfo {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .supportContainer p{
+    font-size: 1.0rem
+  }
+  .supportHeader p {
+    width: 94vw;
+    font-size: 1rem;
+  }
+  .supportBody {
+    padding-top: 12px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .qrCodePlaceholder {
+    padding-bottom: 0;
+  }
+
+  .qrCodePlaceholder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .pixEmail {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pixEmail img {
+    height: 1.3rem;
+    padding-right: 0px;
+    display: none;
+  }
+
+  .contactInfo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin-top: 1.2rem;
+  }
+  
+  .contactInfo h2,
+  .contactInfo h3,
+  .supportBody h3{
+    color: #FCFFF0;
+    font-family: Caesar Dressing;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 5.775rem */
+    padding: 0;
+    margin: 0;
+  }
+  .contactInfo h2 {
+    font-size: 2.5rem;
+  }
+
+
+
+  .contactInfo p {
+    color: #fff;
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  
+  .contactInfo h3,
+  .supportBody h3 {
+    font-size: 2.5rem;
+  }
+  
+
+  .socialMedia {
+    width: 100%;
+    margin-top: 0.6rem;
+    position: relative;
+  }
+  .pequi_media p{
+    padding-top: 0px;
+  }
+ 
+
+}
