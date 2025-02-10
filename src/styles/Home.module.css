@@ -1038,3 +1038,25 @@
   }
 
 }
+<<<<<<< HEAD
+=======
+.linkStyle {
+  color: #ff5722; /* Cor laranja para os links (você pode mudar para a cor que preferir) */
+  text-decoration: underline; /* Sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  margin: 0 5px; /* Espaçamento entre as palavras */
+}
+
+.linkStyle:hover {
+  color: #64544f; /* Cor do link ao passar o mouse (um tom mais escuro de laranja) */
+  text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}#voluntarios {
+  margin-bottom: 0; /* Remove a margem inferior */
+  padding-bottom: 0; /* Remove o preenchimento inferior */
+}
+
+#projetos {
+  margin-top: 0; /* Remove a margem superior */
+  padding-top: 0; /* Remove o preenchimento superior */
+}
+>>>>>>> a5ca0e7 (Atualiza seção de voluntários e corrige botões)

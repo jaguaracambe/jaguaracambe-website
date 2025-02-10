@@ -266,6 +266,10 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> a5ca0e7 (Atualiza seção de voluntários e corrige botões)
       <section className={styles.institurional_video_section}>
         <h1>Vídeo Institucional</h1>
         <div>
@@ -273,6 +277,21 @@ export default function Home() {
         </div>
         
       </section>
+<<<<<<< HEAD
+=======
+      
+      <section id="voluntarios" className={styles.projects_container}>
+  <div className={styles.project_content}>
+    <h1>VOLUNTÁRIOS JAGUARACAMBÉ</h1>
+    <p>
+      Estamos com inscrições abertas para voluntários bolsistas. <br /> {/* Primeira quebra de linha */}
+      <br /> {/* Segunda quebra de linha */}
+      Confira o <Link href="https://drive.google.com/file/d/1yHmo9Pf25t0QqK4j3L38Y28FJytHHun-/view?pli=1" className={styles.linkStyle} target="_blank">edital</Link> e {/* Link para o edital */}
+      <Link href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ntAa1dUMkVFSE42Nk9UQUlPRDQ4UENBSFJYSzE1SC4u&route=shorturl" className={styles.linkStyle}>inscreva-se</Link>! {/* Link para a inscrição */}
+    </p>
+  </div>
+</section>
+>>>>>>> a5ca0e7 (Atualiza seção de voluntários e corrige botões)
 
       <section id="projects" className={styles.projects_container}>
         <div className={styles.project_content}>

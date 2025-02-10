@@ -71,4 +71,55 @@ footer {
     padding: 10px;
     text-align: center;
   }
+<<<<<<< HEAD
 }
+=======
+}.menu-edital {
+  background-color: #ff5722; /* Cor de destaque (laranja) */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.menu-edital:hover {
+  background-color: #e64a19;
+}
+
+.edital-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.edital-links {
+  margin-top: 20px;
+}
+
+.btn-edital, .btn-inscricao {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-edital {
+  background-color: #28a745;
+}
+
+.btn-edital:hover {
+  background-color: #218838;
+}
+
+.btn-inscricao {
+  background-color: #dc3545;
+}
+
+.btn-inscricao:hover {
+  background-color: #c82333;
+}
+>>>>>>> a5ca0e7 (Atualiza seção de voluntários e corrige botões)

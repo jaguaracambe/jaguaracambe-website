@@ -25,7 +25,11 @@ const Header = () => {
         </button>
       </div>
       <nav className={styles.nav}>
+<<<<<<< HEAD
         <Link href="/#about_section" className={styles.link} onClick={toggleMenu}>SOBRE A ONG</Link>
+=======
+      <Link href="/#voluntarios" className={styles.link} onClick={toggleMenu}>VOLUNTÁRIOS</Link>
+>>>>>>> a5ca0e7 (Atualiza seção de voluntários e corrige botões)
         <Link href="/#projects" className={styles.link} onClick={toggleMenu}>PROJETOS</Link>
         <Link href="/#species" className={styles.link} onClick={toggleMenu}>ESPÉCIES</Link>
         <Link href="/#support" className={styles.link} onClick={toggleMenu}>APOIE</Link>
