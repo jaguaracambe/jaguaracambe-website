@@ -267,9 +267,9 @@ export default function Home() {
       </section>
 
       <section id="volunteer_section" className={styles.volunteer_section}>
-  <h2>Seja um Voluntário!</h2>
-  <p> 
-    Junte-se a nós e ajude a preservar o Cerrado Brasileiro. O seu apoio pode fazer uma grande diferença!
+      <h1>Seja um Voluntário!</h1>
+  <p className={styles.centeredText}>
+    Junte-se a nós e ajude a preservar o Cerrado brasileiro. O seu apoio pode fazer uma grande diferença!
   </p>
   <div className={styles.buttons_container}>
     <a href="https://drive.google.com/file/d/1m7XlRVrue09bQFwteANPHjecoF-QTL0K/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
