@@ -281,8 +281,8 @@ export default function Home() {
     <a href="https://drive.google.com/file/d/1ozLZRN_fIzTXWbRzBM9DYrldQDxYE8TB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
       Ato 2
     </a>
-    <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ntAa1dUMkVFSE42Nk9UQUlPRDQ4UENBSFJYSzE1SC4u&route=shorturl" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
-      Inscreva-se
+    <a href="https://drive.google.com/file/d/1zNJPddSg77gYl3nsEGzrukxkGKPsmUGf/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
+      Resultado 1ª Etapa
     </a>
   </div>
 </section>
