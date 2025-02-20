@@ -281,8 +281,8 @@ export default function Home() {
     <a href="https://drive.google.com/file/d/1ozLZRN_fIzTXWbRzBM9DYrldQDxYE8TB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
       Ato 2
     </a>
-    <a href="https://drive.google.com/file/d/1zNJPddSg77gYl3nsEGzrukxkGKPsmUGf/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
-      Resultado 1ª Etapa
+    <a href="https://drive.google.com/file/d/1R_qV3ZKUPz-dqrdWi_E2o-zALOZZqR4n/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
+      Resultado Final
     </a>
   </div>
 </section>
