@@ -266,27 +266,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="volunteer_section" className={styles.volunteer_section}>
-      <h1>Seja um Voluntário!</h1>
-  <p className={styles.centeredText}>
-    Junte-se a nós e ajude a preservar o Cerrado brasileiro. O seu apoio pode fazer uma grande diferença!
-  </p>
-  <div className={styles.buttons_container}>
-    <a href="https://drive.google.com/file/d/1m7XlRVrue09bQFwteANPHjecoF-QTL0K/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
-      Edital
-    </a>
-    <a href="https://drive.google.com/file/d/18fCjU2EJjabTRX121mmrWPNNX7y0soQN/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
-      Ato 1
-    </a>
-    <a href="https://drive.google.com/file/d/1ozLZRN_fIzTXWbRzBM9DYrldQDxYE8TB/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
-      Ato 2
-    </a>
-    <a href="https://drive.google.com/file/d/1R_qV3ZKUPz-dqrdWi_E2o-zALOZZqR4n/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.volunteer_button}>
-      Resultado Final
-    </a>
-  </div>
-</section>
-
 
       <section className={styles.institurional_video_section}>
         <h1>Vídeo Institucional</h1>
