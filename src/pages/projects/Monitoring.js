@@ -70,6 +70,26 @@ export default function Monitoring() {
         </div>
       </section>
 
+      <section className={styles.volunteer_section}>
+        <h2>Parceria Jaguaracambé & Brasília Ambiental</h2>
+        <p>
+          A Jaguaracambé firmou uma parceria com o Instituto Brasília Ambiental para fortalecer o monitoramento da fauna do Cerrado. Esse acordo de cooperação tem duração de três anos e busca expandir os estudos sobre médios e grandes mamíferos na região, contribuindo para a preservação da biodiversidade.
+        </p>
+        <p>
+          O monitoramento da fauna é essencial para identificar espécies, mapear corredores ecológicos e desenvolver estratégias eficazes de conservação. Além disso, a parceria inclui iniciativas de educação ambiental, intercâmbio científico e capacitação de profissionais na área.
+        </p>
+        <p>Para mais detalhes sobre o Acordo de Cooperação e o Plano de Trabalho, clique nos botões abaixo:</p>
+
+        <div className={styles.buttons_container}>
+          <a className={styles.volunteer_button} href="http://www.ibram.df.gov.br/wp-content/uploads/2024/07/SEI_GDF___131838358___Acordo_de_Cooperacao-1-2024_tarja_ocred-Jaguaracambe.pdf" target="_blank" rel="noopener noreferrer">
+            Acordo de Cooperação nº1/2024
+          </a>
+          <a className={styles.volunteer_button} href="http://www.ibram.df.gov.br/wp-content/uploads/2024/11/SEI_131845526_Plano_de_Trabalho_2-Ibram-jaguaracambe.pdf" target="_blank" rel="noopener noreferrer">
+            Plano de Trabalho
+          </a>
+        </div>
+      </section>
+
       <section className={styles.monitoring_informative_section}>
         <Image
           src={windowWidth > 650 ? monitoring_animal : monitoring_animal_mobile}

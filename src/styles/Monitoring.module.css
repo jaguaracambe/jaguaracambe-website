@@ -395,3 +395,131 @@
  
 
 }
+
+.volunteer_section {
+  min-height: 40vh;  /* Altura mínima da seção */
+  padding: 10vh 0;  /* Espaçamento de cima e embaixo */
+  background-color: #D26A2B;  /* Cor de fundo laranja */
+  color: #FFF;  /* Cor do texto */
+  text-align: center;
+  position: relative;
+}
+
+.volunteer_section h2 {
+  font-family: Caesar Dressing, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.volunteer_section p {
+  font-size: 1.2rem;
+  color: #FFF;
+  margin-bottom: 30px;
+  max-width: 800px;  /* Define um limite para não ficar muito largo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-left: auto;  /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  text-align: center; /* Garante que o texto fique alinhado */
+}
+
+.volunteer_section a {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #333;  /* Cor do botão */
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.volunteer_section a:hover {
+  background-color: #444;  /* Cor do botão ao passar o mouse */
+}
+
+.buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.volunteer_button {
+  background-color: #0F2102;
+  color: #FEECC0;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.volunteer_button:hover {
+  background-color: #FEECC0;
+  color: #0F2102;
+}
+
+.partnership_section {
+  min-height: 40vh;  /* Altura mínima da seção */
+  padding: 10vh 0;  /* Espaçamento de cima e embaixo */
+  background-color: #D26A2B;  /* Cor de fundo laranja */
+  color: #FFF;  /* Cor do texto */
+  text-align: center;
+  position: relative;
+}
+
+.partnership_section h2 {
+  font-family: Caesar Dressing, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.partnership_section p {
+  font-size: 1.2rem;
+  color: #FFF;
+  margin-bottom: 30px;
+  width: 80%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.partnership_section a {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #333;  /* Cor do botão */
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.partnership_section a:hover {
+  background-color: #444;  /* Cor do botão ao passar o mouse */
+}
+
+.buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.volunteer_button {
+  background-color: #0F2102;
+  color: #FEECC0;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.volunteer_button:hover {
+  background-color: #FEECC0;
+  color: #0F2102;
+}
